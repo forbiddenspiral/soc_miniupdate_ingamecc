@@ -1,3 +1,4 @@
+# Project files
 .vscode
 Copy-SOC.ps1
 NOTES.md
@@ -5,6 +6,6 @@ Run-SOC.ps1
 SOC-MAIN-PROJECT.code-workspace
 Unset-Read-Only.ps1
 
-gamedata/config/text/rus/
+# Debugging files
 gamedata/scripts/show_on_hud.script
 gamedata/scripts/ui_main_menu.script

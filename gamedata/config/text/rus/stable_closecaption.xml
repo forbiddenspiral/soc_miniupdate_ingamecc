@@ -1,0 +1,1945 @@
+	<!-- UI STRINGS FOR CLOSED CAPTION MODS -->
+
+	<string id="ui_mm_play_igm">
+		<text>Показывать заставки</text>
+	</string>
+	<string id="ui_mm_cc_igm">
+		<text>Субтитры в заставках</text>
+	</string>
+	<!--string id="ui_mm_cc_npc">
+		<text>Субтитры в игре (речь)</text>
+	</string>
+	<string id="ui_mm_cc_icc">
+		<text>Субтитры в игре (звуки)</text>
+	</string-->
+	<string id="ui_mm_cc_captioning">
+		<text>Субтитры в игре</text>
+	</string>
+	<string id="ui_mm_cc_none">
+		<text>Без титров</text>
+	</string>
+	<string id="ui_mm_cc_speechonly">
+		<text>Субтитры (только диалоги)</text>
+	</string>
+	<string id="ui_mm_cc_all">
+		<text>Скрытые титры</text>
+	</string>
+	<string id="ui_mm_play">
+		<text>Смотреть</text>
+	</string>
+	<string id="ui_mm_play_video">
+		<text>Заставки</text>
+	</string>
+
+	<!-- STRING TABLE ADDITIONS FOR GAME -->
+
+	<string id="Recorded_conversations">
+		<text>Записанные разговоры</text>
+	</string>
+	<string id="monolith_use_1">
+		<text>Так ты хочешь, чтобы Зона исчезла...\nПУСТЬ ТВОЕ ЖЕЛАНИЕ ИСПОЛНИТСЯ ($$ACTION_USE$$)</text>
+	</string>
+	<string id="monolith_use_2">
+		<text>Хочешь стать богатым...\nПУСТЬ ТВОЕ ЖЕЛАНИЕ ИСПОЛНИТСЯ ($$ACTION_USE$$)</text>
+	</string>
+	<string id="monolith_use_3">
+		<text>Решил править миром...\nПУСТЬ ТВОЕ ЖЕЛАНИЕ ИСПОЛНИТСЯ ($$ACTION_USE$$)</text>
+	</string>
+	<string id="monolith_use_4">
+		<text>Желаешь уничтожить человечество...\nПУСТЬ ТВОЕ ЖЕЛАНИЕ ИСПОЛНИТСЯ ($$ACTION_USE$$)</text>
+	</string>
+	<string id="monolith_use_5">
+		<text>Хочешь стать бессмертным...\nПУСТЬ ТВОЕ ЖЕЛАНИЕ ИСПОЛНИТСЯ ($$ACTION_USE$$)</text>
+	</string>
+	<string id="monolith_use_6">
+		<text>Узнать тайну Зоны...\nПУСТЬ ТВОЕ ЖЕЛАНИЕ ИСПОЛНИТСЯ ($$ACTION_USE$$)</text>
+	</string>
+
+	<!-- CLOSED CAPTIONS FOR MOVIES -->
+
+	<string id="cc_title_STALKER">
+		<text>С.Т.А.Л.К.Е.Р.</text>
+	</string>
+	<string id="press_esc_to_skip_intro">
+		<text>Нажмите (Esc), чтобы пропустить введение</text>
+	</string>
+	<string id="press_esc_twice_to_continue">
+		<text>Нажмите (Esc) дважды, чтобы продолжить</text>
+	</string>
+	<string id="cc_movie_skipped">
+		<text>Заставка пропущена</text>
+	</string>
+
+	<string id="cc_title_intro_stalker">
+		<text>Грузовик смерти</text>
+	</string>
+	<string id="cc_intro_stalker_01437">
+		<text>О, а этот живой.</text>
+	</string>
+	<string id="cc_intro_stalker_01462">
+		<text>Счастливчик...</text>
+	</string>
+	<string id="cc_intro_stalker_01486">
+		<text>Хотя...кто знает, что для тебя лучше?</text>
+	</string>
+	<string id="cc_intro_stalker_01532">
+		<text>Пойдем посмотрим, что Сидорович за тебя отвалит.</text>
+	</string>
+	<string id="cc_intro_stalker_02130">
+		<text>Что притащил?</text>
+	</string>
+	<string id="cc_intro_stalker_02144">
+		<text>Тело. С "грузовика смерти".</text>
+	</string>
+	<string id="cc_intro_stalker_02182">
+		<text>У него...метка.</text>
+	</string>
+	<string id="cc_intro_stalker_02201">
+		<text>Правила знаешь? Выбрось его...</text>
+	</string>
+	<string id="cc_intro_stalker_02222">
+		<text>Так ведь он живой!</text>
+	</string>
+	<string id="cc_intro_stalker_02240">
+		<text>Ты врешь. Не может быть!</text>
+	</string>
+	<string id="cc_intro_stalker_02265">
+		<text>Пусть меня Зона сожрет, если вру.</text>
+	</string>
+	<string id="cc_intro_stalker_02303">
+		<text>Давай его сюда!</text>
+	</string>
+	<string id="cc_intro_stalker_02410">
+		<text>(УБИТЬ СТРЕЛКА)</text>
+	</string>
+	<string id="cc_intro_stalker_02442">
+		<text>Так...за эту фигню я дам тебе...</text>
+	</string>
+
+	<string id="cc_title_dream_rats">
+		<text>Крысы</text>
+	</string>
+	<string id="cc_dream_rats_00235">
+		<text>Стрелок!</text>
+	</string>
+	<string id="cc_dream_rats_00270">
+		<text>Стрелок!<!-- Strelok! --></text>
+	</string>
+
+	<string id="cc_title_dream_sarcofag">
+		<text>Саркофаг</text>
+	</string>
+
+	<string id="cc_title_dream_doctor">
+		<text>Доктор-сон</text>
+	</string>
+	<string id="cc_dream_doctor_00067">
+		<text>Если это так важно, почему же ты не объяснил, зачем ты идешь туда?</text>
+	</string>
+	<string id="cc_dream_doctor_00127">
+		<text>И как тебе удалось сделать эту фотографию?</text>
+	</string>
+	<string id="cc_dream_doctor_00188">
+		<text>Ты даже не представляешь, где я был и что я там видел!</text>
+	</string>
+	<string id="cc_dream_doctor_00242">
+		<text>Ох, Стрелок... Лучше не лезьте туда.</text>
+	</string>
+	<string id="cc_dream_doctor_00324">
+		<text>Держись, сынок. Я о тебе позабочусь.</text>
+	</string>
+	<string id="cc_dream_doctor_00427">
+		<text>Все будет хорошо.</text>
+	</string>
+	<string id="cc_dream_doctor_00500">
+		<text>И куда ты теперь?</text>
+	</string>
+	<string id="cc_dream_doctor_00534">
+		<text>Север... На север.</text>
+	</string>
+
+	<string id="cc_title_final_blind">
+		<text>Зона исчезла</text>
+	</string>
+	<string id="cc_final_blind_00254">
+		<text>Я хочу, чтобы Зона исчезла.</text>
+	</string>
+
+	<string id="cc_title_final_gold">
+		<text>Золото</text>
+	</string>
+	<string id="cc_final_gold_00099">
+		<text>Дай мне... богатства!</text>
+	</string>
+
+	<string id="cc_title_final_to_monolith">
+		<text>Власть над миром</text>
+	</string>
+	<string id="cc_final_to_monolith_00088">
+		<text>Дай мне... власть над миром!</text>
+	</string>
+
+	<string id="cc_title_final_apocal">
+		<text>Человечество неисправимо</text>
+	</string>
+	<string id="cc_final_apocal_00177">
+		<text>Человечество неисправимо. Оно должно быть уничтожено.</text>
+	</string>
+
+	<string id="cc_title_final_immortal">
+		<text>Бессмертие</text>
+	</string>
+	<string id="cc_final_immortal_00093">
+		<text>Дай мне... бессмертие!</text>
+	</string>
+
+	<string id="cc_title_dream_doctor_2">
+		<text>Доктор-сон 2</text>
+	</string>
+	<string id="cc_dream_doctor_2_00242">
+		<text>Давно я Стрелка не видел.</text>
+	</string>
+	<string id="cc_dream_doctor_2_00285">
+		<text>Неужели он погиб?</text>
+	</string>
+	<string id="cc_dream_doctor_2_00315">
+		<text>Нет, этого не может быть.</text>
+	</string>
+	<string id="cc_dream_doctor_2_00342">
+		<text>Он из любой передряги выберется...</text>
+	</string>
+	<string id="cc_dream_doctor_2_00370">
+		<text>С ним все в порядке.</text>
+	</string>
+	<string id="cc_dream_doctor_2_00393">
+		<text>Ну что, пойдем? Пойдем, пора обедать.</text>
+	</string>
+	<string id="cc_dream_doctor_2_00440">
+		<text>Я знаю, это для тебя важнее, чем судьба старого друга.</text>
+	</string>
+
+	<string id="cc_title_final_peace">
+		<text>Мир</text>
+	</string>
+	<string id="cc_final_peace_01089">
+		<text>Я не знаю, правильно я поступил или нет.</text>
+	</string>
+	<string id="cc_final_peace_01138">
+		<text>И наверно никогда не узнаю.</text>
+	</string>
+	<string id="cc_final_peace_01171">
+		<text>Но я сделал выбор.</text>
+	</string>
+	<string id="cc_final_peace_01197">
+		<text>Надеюсь, он был верным.</text>
+	</string>
+
+	<string id="cc_title_intro_kill_nocc">
+		<text>Убить Стрелка</text>
+	</string>
+	<string id="cc_title_esc_sky_01_nocc">
+		<text>Птицы</text>
+	</string>
+	<string id="cc_title_movie-003_rats_output-010_nocc">
+		<text>Крысы (тёмная версия)</text>
+	</string>
+	<string id="cc_title_aes_sky_red_nocc">
+		<text>Красное небо</text>
+	</string>
+
+	<!-- CLOSED CAPTIONS FOR GAME -->
+
+	<!-- Sounds by snd_theme -->
+
+	<string id="epic-1">
+		<text>Внимание! Вы находитесь возле охраняемого периметра зоны экологического бедствия. Незаконное пересечение периметра влечет за собой уголовную ответственность.</text>
+	</string>
+	<string id="epic-2">
+		<text>Внимание! Любая попытка проникновения на охраняемую территорию будет пресекаться всеми доступными средствами. Патрули имеют право стрелять без предупреждения.</text>
+	</string>
+	<string id="epic-3">
+		<text>Граждане! Зона смертельно опасна. Мы защищаем не Зону от вас, а вас от Зоны. Не подвергайте опасности свои жизни! Не пытайтесь проникнуть на охраняемую территорию.</text>
+	</string>
+	<string id="epic-4">
+		<text>Служба безопасности Украины призывает к сотрудничеству всех добропорядочных и сознательных граждан. Докладывайте нам о всех известных вам случаях сталкерства! Только с вашей помощью мы сможем победить это уродливое явление. Не давайте возможности мародерам укрываться за вашими спинами! Они несут из Зоны радиоактивные, слабоизученные и представляющие большую опасность для жизни и здоровья людей предметы. Не подвергайте опасности свою жизнь и жизни ваших близких ради сомнительной выгоды.</text>
+	</string>
+	<string id="humor-1">
+		<text>Предупреждаю сразу: настроение у меня, как всегда хреновое. Выпить нечего. Всем беспрекословно исполнять обязанности! Буду жестоко наказывать.</text>
+	</string>
+	<string id="humor-2">
+		<text>Хочу предупредить: настроение еще хреновее, чем вчера. То, что нашел вчера, мы выпили. И теперь выпить больше нечего. Буду жестоко наказывать.</text>
+	</string>
+	<string id="humor-3">
+		<text>Так, настроение у меня очень хреновое. Теперь даже очень! Я даже не буду предупреждать. Вы и так все знаете.</text>
+	</string>
+	<string id="humor-4">
+		<text>Такого хренового настроения у меня не было всю неделю. Всем понять!</text>
+	</string>
+	<string id="humor-5">
+		<text>Я просто чумею - такое у меня сегодня хреновое настроение, что я бы расстрелял к такой-то матери!</text>
+	</string>
+	<string id="humor-6">
+		<text>Елы-палы, который уж командир на тот свет отправился, а? Второй, шестой...Хотя, может уже и десятый - кто ж их считает то?</text>
+	</string>
+	<string id="humor-7">
+		<text>Я че вам говорю: сюда и немедленно! Морды порасшибаю! Сукины рылы!</text>
+	</string>
+	<string id="humor-8">
+		<text>Кто там балуется? Я ща приду, я ща приду! Я вам бошки поотрываю!</text>
+	</string>
+	<string id="humor-9">
+		<text>Дерьмо. Кругом одно дерьмо. И идиоты.</text>
+	</string>
+	<string id="humor-10">
+		<text>Солдат, не спать!</text>
+	</string>
+	<string id="humor-11">
+		<text>Ты че уставился? По шее давно не получал?</text>
+	</string>
+	<string id="humor-12">
+		<text>Солдат, шевели копытами!</text>
+	</string>
+	<string id="humor-13">
+		<text>Вы че там? Совсем охренели, что ли?</text>
+	</string>
+	<string id="humor-14">
+		<text>Кто там шувыркает где-то тут, а? Ща приду - наваляю.</text>
+	</string>
+	<string id="humor-15">
+		<text>...но-мммм. Сиднем тут сижу. Че я тут, спрашивается? А? Во.</text>
+	</string>
+	<string id="humor-16">
+		<text>Вырубите на хрен эту хрень! У меня голова раскалывается.</text>
+	</string>
+	<string id="humor-17">
+		<text>...Ааааа... Хорошо пошло.</text>
+	</string>
+	<string id="alarm1-1">
+		<text>Немедленно! Бросить оружие на землю!</text>
+	</string>
+	<string id="alarm1-2">
+		<text>Стоять!</text>
+	</string>
+	<string id="alarm1-3">
+		<text>Ни с места!</text>
+	</string>
+	<string id="alarm1-4">
+		<text>И определиться!</text>
+	</string>
+	<string id="alarm1-5">
+		<text>Бросить оружие на землю!</text>
+	</string>
+	<string id="siren-1">
+		<text>[сирена]</text>
+	</string>
+	<string id="trader_door_open_start-1">
+		<text>[дверь открывается]</text>
+	</string>
+	<string id="trader_door_close_start-1">
+		<text>[скрип двери]</text>
+	</string>
+	<string id="trader_door_close_stop-1">
+		<text>[дверь закрывается]</text>
+	</string>
+	<string id="trader_door_locked-1">
+		<text>[заперто]</text>
+	</string>
+	<string id="agro_test-1">
+		<text>[взрыв гранаты!]</text>
+	</string>
+
+	<!-- Sounds by snd_id -->
+
+	<string id="cc_10054">
+		<text>Пусти оружие!</text>
+	</string>
+	<string id="cc_10067">
+		<text>[смех]</text>
+	</string>
+	<string id="cc_10101">
+		<text>[атака зомби]</text>
+	</string>
+	<string id="cc_10115">
+		<text>[играет гитара]</text>
+	</string>
+	<string id="cc_10173">
+		<text>[смех]</text>
+	</string>
+	<!-- mrs240419 - match ZPR sound ids -->
+	<string id="cc_10041">
+		<text>Пусти оружие!</text>
+	</string>
+	<string id="cc_10046">
+		<text>[смех]</text>
+	</string>
+	<string id="cc_10063">
+		<text>[атака зомби]</text>
+	</string>
+	<string id="cc_10070">
+		<text>[играет гитара]</text>
+	</string>
+	<string id="cc_10099">
+		<text>[смех]</text>
+	</string>
+
+	<!-- Sounds by npcsnd_theme -->
+
+	<string id="esc_wolf_say_thanks-0">
+		<text>Подходи, пообщаемся!</text>
+	</string>
+	<string id="esc_wolf_radio-0">
+		<text>Мужики, я к вам посылаю человека. Действуйте по обстоятельствам. Если сочтете нужным - атакуйте. Прием.</text>
+	</string>
+	<string id="esc_wolf_to_rangers_1">
+		<text>Хорошо, Волк, присылай. Только пусть не мельтешит здесь. Конец связи.</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_1-1">
+		<text>Ну смотри, урод. Ежели наплел про схрон - амбец тебе, блин. На костре зажарим!</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_1-2">
+		<text>Да это правда. Честное слово!</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_2-1">
+		<text>Чего то он долго не идет.</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_2-2">
+		<text>Ну может задержался чего-то. Патруль там или что...</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_2-3">
+		<text>Да заткни свою пасть!</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_3-1">
+		<text>Копец тебе, если обманул!</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_3-2">
+		<text>Нет-нет, не обманул я!</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_4-1">
+		<text>Ну, блин, у меня уже руки чешутся тебя придушить!...</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_4-2">
+		<text>Да я правду сказал! Я ж понимаю...</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_5-1">
+		<text>Если ты нашего кореша подставил, я тебя...</text>
+	</string>
+	<string id="cc_scenario-escape-factory_bandits_5-2">
+		<text>Нет, не надо!</text>
+	</string>
+	<string id="esc_factory_attack-0">
+		<text>Вперед! В атаку! Валим уродов!</text>
+	</string>
+	<string id="esc_factory_go-0">
+		<text>Не отставать!</text>
+	</string>
+	<string id="esc_factory_go-1">
+		<text>Далеко не отрываться!</text>
+	</string>
+	<string id="esc_factory_go-2">
+		<text>Держаться кучно! Не разбегаться, как стадо ежей!</text>
+	</string>
+	<string id="esc_factory_raid-0">
+		<text>Мужики, тут Волк прислал нам подмогу и приказ атаковать. Так что - вперед, геройствовать!</text>
+	</string>
+	<string id="esc_factory_victory-0">
+		<text>Мы их порвали!</text>
+	</string>
+	<string id="esc_fox_alert-0">
+		<text>Я стаю псов на хвосте привел. Помоги отстрелять их. Потом я отвечу на все твои вопросы.</text>
+	</string>
+	<string id="esc_fox_thanks-0">
+		<text>Все. Одолели тварей.</text>
+	</string>
+	<string id="esc_petruha_call-0">
+		<text>Дружище, не шелести особо! Дай поясню ситуацию.</text>
+	</string>
+	<string id="esc_petruha_raport-0">
+		<text>Волк, фабрику зачистили. Выдвигаемся на исходные позиции. Конец связи.</text>
+	</string>
+	<string id="esc_shustryi_help-0">
+		<text>Эй! Есть кто живой? Мне еще сидеть, или уже можно уходить?</text>
+	</string>
+	<string id="esc_shustryi_help-1">
+		<text>Эй! Мужики, вы живы? Что вообще происходит?</text>
+	</string>
+	<string id="esc_shustryi_help-2">
+		<text>Братцы, я тут! Выручайте!</text>
+	</string>
+	<string id="esc_shustryi_help-3">
+		<text>Блиииин, денек выдался! Мать вашу! Меня кто-то спасать будет, или как?</text>
+	</string>
+	<string id="esc_shustryi_thanks-0">
+		<text>Спасибо, брат! Даже не знаю как и благодарить тебя!</text>
+	</string>
+	<string id="esc_bridge_soldiers-0">
+		<text>Чего стоишь, сталкер? Хочешь пройти - иди сюда, говорить будем. Нет - вали отсюда по хорошему!</text>
+	</string>
+	<string id="esc_tolik_help-0">
+		<text>Помоги, брат! Возьми с трупа аптечку! Не могу дотянуться...</text>
+	</string>
+	<string id="esc_tolik_help-1">
+		<text>Помоги, брат! Возьми с трупа аптечку! Я не доползу...</text>
+	</string>
+	<string id="esc_tolik_thanks-0">
+		<text>Спасибо, Меченый. Я вижу, ты - нормальный мужик. Я своим в лагере обязательно передам, что ты мне помог.</text>
+	</string>
+	<string id="esc_fanat_dialog-0">
+		<text>Эй, Меченый, поди сюда. Есть тема... для разговора.</text>
+	</string>
+	<string id="esc_fanat_ready-0">
+		<text>Все по местам! Ждем противника и не зеваем.</text>
+	</string>
+	<string id="esc_fanat_victory-0">
+		<text>Победа! Все, кто жив подойдите ко мне. Меченый, ходи сюда! Говорить будем.</text>
+	</string>
+	<string id="esc_lager_killer-0">
+		<text>Разбежались, значит, сосунки. Да на этих молокососов смотреть тошно! Тьфу!</text>
+	</string>
+
+	<!-- Escape -->
+
+	<string id="cc_characters_voice-scenario-trader-trader1a">
+		<text>Подойди-ка, надо тебе ситуацию прояснить!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader1b">
+		<text>Ну че стоишь? Подходи, я не кусаюсь.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader3a">
+		<text>Куда ты без оружия, придурок?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader3b">
+		<text>Эй, иди сюда! Подкину тебе кое-что.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader3c">
+		<text>Ну, проветришься - заходи!</text>
+	</string>
+	<string id="article_sidorovich_greets">
+		<text>Привет от Сидоровича</text>
+	</string>
+	<string id="rc_characters_voice-scenario-trader-trader_monolog1">
+		<text>Короче, Меченый. Я тебя спас и в благородство играть не буду.
+		Выполнишь для меня пару заданий, и мы в расчете. \n \n
+		Заодно посмотрим, как быстро у тебя башка после амнезии прояснится.
+		А по твоей теме постараюсь разузнать. \n \n
+		Хрен его знает, на кой ляд тебе этот Стрелок сдался! Но... я в чужие дела не лезу.
+		Хочешь убить - значит есть, за что.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_monolog1-1">
+		<text>Короче, Меченый. Я тебя спас и в благородство играть не буду. Выполнишь для меня пару заданий, и мы в расчете.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_monolog1-2">
+		<text>Заодно посмотрим, как быстро у тебя башка после амнезии прояснится. А по твоей теме постараюсь разузнать.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_monolog1-3">
+		<text>Хрен его знает, на кой ляд тебе этот Стрелок сдался! Но... я в чужие дела не лезу. Хочешь убить - значит есть, за что.</text>
+	</string>
+	<string id="article_sidor_about_strelok">
+		<text>Сидорович по Стрелку</text>
+	</string>
+	<string id="rc_characters_voice-scenario-trader-trader_monolog2">
+		<text>В общем, по Стрелку узнал кое-что. Есть такой сталкер. Говорят, дорогу на север Зоны нашёл. \n \n
+		А места там нетронутые, прям Клондайк артефактов... М-да... В общем, я помогу тебе его найти - но, как ты сам понимаешь, не за "просто так". Гы-гы. \n \n
+		Придется отрабатывать. Но в итоге будет нам обоим хорошо: ты своего Стрелка замочишь, а заодно может узнаешь, что с тобой стряслось. А я узна... ну, в общем, свою выгоду от сотрудничества тоже поимею. Хе-хе-хе-хе. Ну, Что скажешь? По рукам?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1a_1">
+		<text>Ну, здорова!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1a_2">
+		<text>Вернулся?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1a_3">
+		<text>Хабар принес?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1a_4">
+		<text>Есть что-то стоящее?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1a_5">
+		<text>Что притащил?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1a_6">
+		<text>Как дела, сталкер?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1b_1">
+		<text>Иди, не мозоль глаза!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_1">
+		<text>Неплохо, хороший товар.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_2">
+		<text>Хорошо. Ну, будет еще - заходи.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_3">
+		<text>Молодец! Я доволен.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_4">
+		<text>Вот так бы всегда!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_5">
+		<text>Ну, удачной охоты, сталкер!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_6">
+		<text>Ты бы еще консервных банок насобирал!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_7">
+		<text>Нафига ты эту дрянь тягаешь?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_8">
+		<text>Что за бодягу ты мне приволок?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-trader-trader_script1c_9">
+		<text>Братан, ты не врубаешься? Мне нужен реальный товар.</text>
+	</string>
+	<string id="cc_ambient-gunfire_2">
+		<text>[слышна стрельба]</text>
+	</string>
+	<string id="cc_device-door_servomotor">
+		<text>[замок открыт]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-escape-heli_radio_part_1">
+		<text>[военное радио]</text>
+	</string>
+
+	<!-- Garbage -->
+
+	<string id="cc_characters_voice-scenario-garbage-grey_grey_1">
+		<text>Всем, кто меня слышит: мы атакованы группой бандитов. Нужна помощь! Братки, выручайте - беспредел творится! Бандиты охренели. Блин, да есть кто-нибудь рядом? Нам тут кирдык приходит.</text>
+	</string>
+
+	<string id="gar_bandits_seryi-1">
+		<text>Ты щас сдохнешь, падла! Понял?</text>
+	</string>
+	<string id="gar_bandits_seryi-2">
+		<text>Я те щас жопу порву на фашистские знаки!</text>
+	</string>
+	<string id="gar_bandits_seryi-3">
+		<text>Тебе - хана! Вылазь, падла!</text>
+	</string>
+	<string id="gar_bandits_seryi-4">
+		<text>Не дайте ему слинять!</text>
+	</string>
+	<string id="gar_bandits_seryi-5">
+		<text>Тебе не долго осталось! Вылезай, козлина!</text>
+	</string>
+	<string id="gar_dm_bandit_backoff1-0">
+		<text>А ты вали отсюда, герой хренов!</text>
+	</string>
+	<string id="gar_dm_bandit_backoff2-0">
+		<text>Сталкер, не лезь не в свое дело!</text>
+	</string>
+	<string id="gar_dm_bandit_demand-0">
+		<text>Бабки, артефакты гони! Быстро на... Придурок!</text>
+	</string>
+	<string id="gar_dm_bandit_demand-1">
+		<text>Ты че, козел, не врубаешься?</text>
+	</string>
+	<string id="gar_dm_bandit_demand-2">
+		<text>Гони бабло, или бошку отстрелим!</text>
+	</string>
+	<string id="gar_dm_newbie_help_me-0">
+		<text>Это бандиты! Помоги!</text>
+	</string>
+	<string id="gar_dm_newbie_no_money-0">
+		<text>Чуваки, да я пустой!</text>
+	</string>
+	<string id="gar_dm_newbie_no_money-1">
+		<text>Да нет у меня ни денег, ни артефактов!</text>
+	</string>
+	<string id="gar_dm_newbie_no_money-2">
+		<text>У меня ничего нет! Не стреляйте!</text>
+	</string>
+	<string id="gar_dm_newbie_thank_you-0">
+		<text>Спасибо, друг. Я твой должник.</text>
+	</string>
+	<string id="gar_dolg_blokpost-0">
+		<text>Сталкер, вали отсюда! Мы кого попало не пропускаем.</text>
+	</string>
+	<string id="gar_hellcar_alarm-0">
+		<text>Идут! Они идут!</text>
+	</string>
+	<string id="gar_hellcar_ambush-0">
+		<text>Отлично, мужики! Выдвигаемся на позиции.</text>
+	</string>
+	<string id="gar_hellcar_to_battle-0">
+		<text>Вперед, мужики! Порвем этих ублюдков!</text>
+	</string>
+	<string id="gar_seryi_see_actor-0">
+		<text>Браток, помоги отбиться от уродов!</text>
+	</string>
+	<string id="gar_seryi_shooting-1">
+		<text>[слышна стрельба]</text>
+	</string>
+	<string id="gar_seryi_shooting_2-1">
+		<text>Дык...</text>
+	</string>
+
+	<!-- Agroprom -->
+
+	<string id="article_doctor_monolog">
+		<text>Навестить Доктора</text>
+	</string>
+	<string id="rc_scenario-agroprom-doctor_1">
+		<text>Стрелок! Эй, Стрелок! \n \n
+		Давай, давай, приходи в себя! \n \n
+		Вот, так то лучше. Ты чего в растяжку то полез? Память у тебя отшибло что ли?
+		Это ж ты и предложил такую меру безопасности. Ну да ладно. \n \n
+		Хорошо, хоть живой остался.
+		Времени в обрез. Поэтому слушай меня внимательно. \n \n
+		Все, что ты говорил о монолите верно.
+		Это просто иллюзия, которую наводят из некой лаборатории рядом с саркофагом.
+		Известно, что никто из добравшихся до монолита не возвращался. \n \n
+		Похоже, они там и погибали. \n \n
+		Так вот, пока тебя не было, я раскопал информацию.
+		Вообщем так: есть декодер для открытия двери, ведущей к системе управления монолитом.
+		Декодер спрятан в тайнике на Припяти. \n \n
+		Координаты тайника и ключ к нему я тебе даю.
+		Возьмешь декодер, найдешь в саркофаге нужную дверь, а там...
+		Ну а там по обстановке... \n \n
+		Судя по всему, это единственная возможность пробраться к настоящей тайне Зоны, которую ты всегда пытался разгадать. \n \n
+		Это все, Стрелок. Теперь пришло время прощаться.
+		Мне надо залечь на дно, но я буду тебя ждать. Удачи!</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-01">
+		<text>Стрелок! Эй, Стрелок!</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-02">
+		<text>Давай, давай, приходи в себя!</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-03">
+		<text>Вот, так то лучше. Ты чего в растяжку то полез? Память у тебя отшибло что ли?</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-04">
+		<text>Это ж ты и предложил такую меру безопасности. Ну да ладно.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-05">
+		<text>Хорошо, хоть живой остался.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-06">
+		<text>Времени в обрез. Поэтому слушай меня внимательно.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-07">
+		<text>Все, что ты говорил о монолите верно.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-08">
+		<text>Это просто иллюзия, которую наводят из некой лаборатории рядом с саркофагом.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-09">
+		<text>Известно, что никто из добравшихся до монолита не возвращался.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-10">
+		<text>Похоже, они там и погибали.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-11">
+		<text>Так вот, пока тебя не было, я раскопал информацию.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-12">
+		<text>Вообщем так: есть декодер для открытия двери, ведущей к системе управления монолитом.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-13">
+		<text>Декодер спрятан в тайнике на Припяти.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-14">
+		<text>Координаты тайника и ключ к нему я тебе даю.</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-15">
+		<text>Возьмешь декодер, найдешь в саркофаге нужную дверь, а там...</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-16">
+		<text>Ну а там по обстановке...</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-17">
+		<text>Судя по всему, это единственная возможность пробраться к настоящей тайне Зоны...</text>
+	</string>
+	<string id="cc_scenario-agroprom-doctor_1-18">
+		<text>которую ты всегда пытался разгадать.</text>
+	</string>
+	<string id="agr_desertir_spam-0">
+		<text>Что делать? Что делать?</text>
+	</string>
+	<string id="agr_desertir_spam-1">
+		<text>Зона проклятая... Твари, все дыры нами затыкают. Ненавижу.</text>
+	</string>
+	<string id="agr_desertir_spam-2">
+		<text>Домой хочу. Домой!</text>
+	</string>
+	<string id="agr_dont_shoot-0">
+		<text>Не стреляйте, пожалуйста!</text>
+	</string>
+	<string id="agr_krot_fear-0">		<!-- copy of "esc_shustryi_help-2" -->
+		<text>Братцы, я тут! Выручайте!</text>
+	</string>
+	<string id="agr_krot_thanks_2-0">
+		<text>Фухх.
+		Тут тихо. Можем подождать, пока рейд закончится.
+		Серый сказал мне, что ты ищешь. Это здесь где-то, под землей. Не могу сказать, где именно - сам не знаю.
+		Будь осторожен. Удачи!</text>
+	</string>
+	<string id="agr_krot-speech-0">
+		<text>Спасибо, друг. Выручил ты меня.
+		Одной ногой на том свете уже стоял.
+		Послушай: военные не оставляют дела недоделанными. Скоро здесь будет спецназ. Нужно уносить ноги и побыстрее.
+		Побежали! Я тебя выведу.</text>
+	</string>
+	<string id="agr_krot-speech1-0">	<!-- copy of "val_prisoner_captive_help_me-0" -->
+		<text>На помощь!</text>
+	</string>
+	<string id="agr_krot-speech1-1">	<!-- copy of "val_prisoner_captive_help_me-1" -->
+		<text>Кто-нибудь! Помогите!</text>
+	</string>
+	<string id="agr_krot-speech1-2">	<!-- copy of "val_prisoner_captive_help_me-2" -->
+		<text>Чуваки, помогите! Меня порешат скоро!</text>
+	</string>
+	<string id="agr_stalker_help_1-0">
+		<text>Черт, это военный десант! Там же наши!</text>
+	</string>
+	<string id="agr_stalker_help_2-0">
+		<text>Эй, мужик, помоги мне! Военные собираются перебить группу крота. Нам нужна помощь!</text>
+	</string>
+	<string id="agr_stalker_help_3-0">
+		<text>Вперед, мужики!</text>
+	</string>
+	<string id="agr_stalker_help_4-0">
+		<text>Пошли! Сейчас!</text>
+	</string>
+
+	<!-- Bar -->
+
+	<string id="bar_arena_fight_1-1">
+		<text>Приветствуйте на арене: два свежайших куска мяса. Кто-то из них сегодня станет мясом на корм собакам в буквальном смысле. Начнем!</text>
+	</string>
+	<string id="bar_arena_fight_1_end-1">
+		<text>Выпустите собак! Одним неудачником стало меньше.</text>
+	</string>
+	<string id="bar_arena_fight_2-1">
+		<text>Новый бой! Два претендента на цинковый дом. Оба прошли первый круг. Покажите, чему научились. Поехали!</text>
+	</string>
+	<string id="bar_arena_fight_2_end-1">
+		<text>Врача, врача! Хотя ему уже не поможешь. Мясник...</text>
+	</string>
+	<string id="bar_arena_fight_3-1">
+		<text>Крещение огнем для нашего нового бойца - сталкера Меченого. Сегодня мы узнаем, кто он: претендент на звание чемпиона или просто кусок мяса.</text>
+	</string>
+	<string id="bar_arena_fight_3_end-1">
+		<text>Да, у этих двух парней даже не было шанса.</text>
+	</string>
+	<string id="bar_arena_fight_4-1">
+		<text>Постановка боя: бандиты грабят сталкеров-новичков. В роли новичков меченый и его мясо.</text>
+	</string>
+	<string id="bar_arena_fight_4_end-1">
+		<text>Ыыыыыы... Даже коса находит на камень.</text>
+	</string>
+	<string id="bar_arena_fight_5-1">
+		<text>Сегодня у нас особенный бой! Специально приглашенные гости из доблестного ОМОНа будут пытаться задержать неповторимого Меченого. Покажи им, чего ты стоишь!</text>
+	</string>
+	<string id="bar_arena_fight_5_end-1">
+		<text>Господа военные покинули наше мероприятие.</text>
+	</string>
+	<string id="bar_arena_fight_6-1">
+		<text>Только сегодня! Преступление и наказание. Неповторимый Меченый в роли доблестного мента наводит правосудие против шестерых преступников и негодяев. Айда!</text>
+	</string>
+	<string id="bar_arena_fight_6_end-1">
+		<text>Свершилось правосудие! Никому из этих шестерых не суждено было оказаться на воле.</text>
+	</string>
+	<string id="bar_arena_fight_7-1">
+		<text>Бой за участие в смертельном бою. Неповторимый Меченый против мастера, но с небольшими изменениями. Смотрите на растерянное лицо Меченого. Он даже не подозревал... И так: нож против FN-2000! Поехали!</text>
+	</string>
+	<string id="bar_arena_fight_7_end-1">
+		<text>Не может быть! Он это сделал! В очередной раз доказав, что неважно, каким оружием пользоваться. Главное - как!</text>
+	</string>
+	<string id="bar_arena_fight_8-1">
+		<text>Уважаемые зрители, сегодня и только сегодня бой за обладание званием мастера арены. В нем участвуют пятеро финалистов дошедших до финала, оставив позади себя лужи крови и пота. Каждый сам за себя. Никаких правил! Пусть победит лучший! Начали!</text>
+	</string>
+	<string id="bar_arena_fight_8_end-1">
+		<text>Слава! Слава новому мастеру арены. Единственный и неповторимый - Меченый. Ты заслужил это звание по праву. Слава! Слава Меченому!</text>
+	</string>
+	<string id="bar_arena_public-1">
+		<text>Давай! Давай, замочи его!</text>
+	</string>
+	<string id="bar_arena_public-2">
+		<text>Мочи его, мочи гада!</text>
+	</string>
+	<string id="bar_arena_public-3">
+		<text>Осторожнее!</text>
+	</string>
+	<string id="bar_arena_public-4">
+		<text>Да пристрели ты его!</text>
+	</string>
+	<string id="bar_arena_public-5">
+		<text>Добивай, добивай!</text>
+	</string>
+	<string id="bar_arena_public-6">
+		<text>Смотри, т... ты смори, че делает!</text>
+	</string>
+	<string id="bar_arena_public-7">
+		<text>Да двигайся же ты, не стой!</text>
+	</string>
+	<string id="bar_arena_public-8">
+		<text>Братишка, давай! Промеж глаз ему! Промеж глаз!</text>
+	</string>
+	<string id="bar_arena_public-9">
+		<text>Сбоку, сбоку заходи.</text>
+	</string>
+	<string id="bar_bar_barmen_hello-0">
+		<text>Здорова, Меченый!</text>
+	</string>
+	<string id="bar_bar_barmen_hello-1">
+		<text>Ну что, дружище, как оно?</text>
+	</string>
+	<string id="bar_bar_barmen_hello-2">
+		<text>Жив еще? Ну и отлично.</text>
+	</string>
+	<string id="bar_bar_barmen_hello-3">
+		<text>Как оно?</text>
+	</string>
+	<string id="bar_bar_barmen_hello-4">
+		<text>Как делишки?</text>
+	</string>
+	<string id="bar_bar_barmen_hello_room_0">
+		<text>Чего так долго, а?</text>
+	</string>
+	<string id="bar_bar_barmen_hello_room_1">
+		<text>Давай уже, подходи.</text>
+	</string>
+	<string id="bar_bar_barmen_hello_room_2">
+		<text>Ну че стоишь? Давай, подходи.</text>
+	</string>
+	<string id="bar_bar_barmen_hello_room_3">
+		<text>Давай, подходи. Времени мало.</text>
+	</string>
+	<string id="bar_bar_drunk_dolg-0">
+		<text>Вот дерьмо! Опять пьян!</text>
+	</string>
+	<string id="bar_bar_drunk_dolg-1">
+		<text>Шо делать? Что же, черт меня дери, делать?</text>
+	</string>
+	<string id="bar_bar_drunk_dolg-2">
+		<text>Ну еще стопочку!</text>
+	</string>
+	<string id="bar_bar_osvedomitel_hello-0">
+		<text>Подходи, сталкер. Для таких, как ты, у меня всегда есть кое-что интересное.</text>
+	</string>
+	<string id="bar_bar_osvedomitel_hello-1">
+		<text>Не тормози, мужик. Моя информация может тебе пригодиться.</text>
+	</string>
+	<string id="bar_bar_visitor_hunter-state-0">
+		<text>Эх, черт...</text>
+	</string>
+	<string id="bar_bar_visitor_hunter-state-1">
+		<text>Эээх, если б кто помог...</text>
+	</string>
+	<string id="bar_bar_visitor_hunter-state-2">
+		<text>Блин!</text>
+	</string>
+	<string id="bar_bar_visitor_hunter-state-3">
+		<text>Ну как меня угораздило!</text>
+	</string>
+	<string id="bar_bar_visitor_hunter-state-4">
+		<text>Черт меня дернул...</text>
+	</string>
+	<string id="bar_dolg_guard_busy-0">
+		<text>Говори с главным. Я занят.</text>
+	</string>
+	<string id="bar_dolg_guard_busy-1">
+		<text>Поговори с главным.</text>
+	</string>
+	<string id="bar_dolg_guard_stop-0">
+		<text>Стоять! Чужакам на территорию вход закрыт.</text>
+	</string>
+	<string id="bar_dolg_guard_stop-1">
+		<text>Стоять! Территория для чужих закрыта.</text>
+	</string>
+	<string id="bar_dolg_hangar_bridge_hello-0">
+		<text>Иди своей дорогой, сталкер.</text>
+	</string>
+	<string id="bar_dolg_leader-0">
+		<text>Хм. Так-так. Они сунутся, а мы их и...</text>
+	</string>
+	<string id="bar_dolg_leader-1">
+		<text>Слишком многое прощаем анархистам. Да...</text>
+	</string>
+	<string id="bar_dolg_leader-2">
+		<text>Пора уже навести порядок.</text>
+	</string>
+	<string id="bar_dolg_leader-3">
+		<text>Ребята, конечно, устали. Но нельзя расслабляться. Нельзя.</text>
+	</string>
+	<string id="bar_dolg_leader-4">
+		<text>Мда.</text>
+	</string>
+	<string id="bar_dolg_leader-5">
+		<text>Ага.</text>
+	</string>
+	<string id="bar_dolg_leader-6">
+		<text>Так, вот это стоит принять во внимание.</text>
+	</string>
+	<string id="bar_dolg_leader-7">
+		<text>Они ждать не будут.</text>
+	</string>
+	<string id="bar_dolg_leader_hello-0">
+		<text>Здравствуй, брат. Говори, зачем пришел.</text>
+	</string>
+	<string id="bar_dolg_leader_hello-1">
+		<text>Че стоишь? Выкладывай, зачем пришел.</text>
+	</string>
+	<string id="bar_dolg_petrenko_hello-0">
+		<text>Подходи, раз пришел.</text>
+	</string>
+	<string id="bar_dolg_petrenko_hello-1">
+		<text>Зачем пришел?</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-0">
+		<text>Эх, блин. День за днем одно и то же.</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-1">
+		<text>И когда все это закончится?</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-2">
+		<text>Ээх. Видать, судьба такая.</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-3">
+		<text>Ну, еще разок помянем. Хороший был сталкер.</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-4">
+		<text>Ой, хреновая ходка была.</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-5">
+		<text>Да иди ты!</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-6">
+		<text>Отвали! И так тоска, бл...</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-7">
+		<text>Ээээa.</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-8">
+		<text>Ты меня уважаешь?</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-9">
+		<text>Мля-х.</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-12">
+		<text>Отшумели летние дожди...</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-13">
+		<text>Черный ворон... Эээм! Черный ворон... ты что кружишься... над могилой...</text>
+	</string>
+	<string id="bar_bar_visitors_1_2-state-14">
+		<text>Так поневоле начнешь пи... чтоб все забросить и забыть.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-0">
+		<text>Эх, блин. День за днем одно и то же.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-1">
+		<text>И когда все это закончится?</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-2">
+		<text>Ээх. Видать, судьба такая.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-3">
+		<text>Ну, еще разок помянем. Хороший был сталкер.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-4">
+		<text>Ой, хреновая ходка была.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-5">
+		<text>Да иди ты!</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-6">
+		<text>Отвали! И так тоска, бл...</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-7">
+		<text>Ээээa.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-8">
+		<text>Ты меня уважаешь?</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-9">
+		<text>Мля-х.</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-12">
+		<text>Отшумели летние дожди...</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-13">
+		<text>Черный ворон... Эээм! Черный ворон... ты что кружишься... над могилой...</text>
+	</string>
+	<string id="bar_bar_visitors_3_2-state-14">
+		<text>Так поневоле начнешь пи... чтоб все забросить и забыть.</text>
+	</string>
+	<string id="bar_guard_prohodi-0">
+		<text>Проходи, не задерживайся!</text>
+	</string>
+	<string id="bar_guard_stop-0">
+		<text>Тебе сюда нельзя!</text>
+	</string>
+	<string id="bar_guard_stop-1">
+		<text>Поговори с барменом.</text>
+	</string>
+	<string id="bar_guard_stop-2">
+		<text>Стой! Сейчас туда нельзя.</text>
+	</string>
+	<string id="bar_guard_enter-0">
+		<text>Проходи, бармен ждет.</text>
+	</string>
+	<string id="bar_guard_enter-1">
+		<text>Проходи, проходи!</text>
+	</string>
+	<string id="bar_start_megafon-1">	<!-- copy of "dolg_speech-1" -->
+		<text>Внимание! Ищутся добровольцы для выполнения опасных, но хорошо оплачиваемых заданий. Заинтересованным - подходить в бар.</text>
+	</string>
+	<string id="bar_start_megafon-2">	<!-- copy of "dolg_speech-2" -->
+		<text>Сталкеры! Если вы ищете место, где можно перекусить и отдохнуть... Место, где можно хорошо выпить и поговорить... Место, где вам всегда подскажут, как подзаработать... Подходите в бар "100 РЕНТГЕН". Мы всегда рады новым посетителям.</text>
+	</string>
+	<string id="bar_start_megafon-3">	<!-- copy of "dolg_speech-3" -->
+		<text>Ветераны Чернобыля, вступайте в ряды Долга! На нас лежит огромная ответственность - защитить мир от растущей Зоны.</text>
+	</string>
+	<string id="bar_start_megafon-4">	<!-- copy of "dolg_speech-4" -->
+		<text>Свободные сталкеры, ветераны и охотники, вливайтесь в ряды Долга! Защитить мир от заразы Зоны - наша общая цель и задача.</text>
+	</string>
+	<string id="dolg_alarm-1">
+		<text>Внимание! Обнаружены враждебные элементы. Приказ всем, кто находится на территории Долга: срочно уничтожить врагов!</text>
+	</string>
+	<string id="dolg_megafon_1_hit-1">
+		<text>Прекратить стрельбу! На территории Долга стрельба запрещена. Нарушители будут наказаны.</text>
+	</string>
+	<string id="dolg_megafon_2_hit-1">
+		<text>Внимание! Меченый нарушил правила применения оружия и будет убит.</text>
+	</string>
+	<string id="dolg_megafon_kill-1">
+		<text>Внимание! Обнаружен убийца. Приказ всем, кто находится на территории Долга: срочно уничтожить убийцу!</text>
+	</string>
+	<string id="dolg_speech-1">
+		<text>Внимание! Ищутся добровольцы для выполнения опасных, но хорошо оплачиваемых заданий. Заинтересованным - подходить в бар.</text>
+	</string>
+	<string id="dolg_speech-2">
+		<text>Сталкеры! Если вы ищете место, где можно перекусить и отдохнуть... Место, где можно хорошо выпить и поговорить... Место, где вам всегда подскажут, как подзаработать... Подходите в бар "100 РЕНТГЕН". Мы всегда рады новым посетителям.</text>
+	</string>
+	<string id="dolg_speech-3">
+		<text>Ветераны Чернобыля, вступайте в ряды Долга! На нас лежит огромная ответственность - защитить мир от растущей Зоны.</text>
+	</string>
+	<string id="dolg_speech-4">
+		<text>Свободные сталкеры, ветераны и охотники, вливайтесь в ряды Долга! Защитить мир от заразы Зоны - наша общая цель и задача.</text>
+	</string>
+	<string id="dolg_speech-5">
+		<text>Сталкер, защити мир от Зоны! Вступи в Долг!</text>
+	</string>
+	<string id="dolg_speech-6">
+		<text>Мир со страхом смотрит на расползающуюся заразу Зоны. Вступи в Долг! Помоги мирным людям!</text>
+	</string>
+	<string id="dolg_speech-7">
+		<text>Смертельные аномалии, опасные мутанты, анархисты и бандиты не остановят Долг, победоносной поступью идущий на помощь мирным гражданам всей планеты!</text>
+	</string>
+	<string id="dolg_speech-8">
+		<text>[музыка в мегафон]</text>
+	</string>
+	<string id="dolg_speech-9">
+		<text>[музыка в мегафон]</text>
+	</string>
+	<string id="dolg_speech-10">
+		<text>[музыка в мегафон]</text>
+	</string>
+
+	<!-- Dark Valley -->
+
+	<string id="val_escort_bandit_halfdead-speech-0">
+		<text>Не-не, не убивай меня! Твоего напарника счас будут вести на заброшенную фабрику! Это все, что я знаю! Мля буду!</text>
+	</string>
+	<string id="val_escort_captive_phrase1-0">
+		<text>Помогите!</text>
+	</string>
+	<string id="val_escort_captive_phrase2-0">
+		<text>Пуля, спасибо, друг! Я, блин, уже с жизнью попрощался.</text>
+	</string>
+	<string id="val_escort_captive_phrase3-0">
+		<text>Спасибо, друг!</text>
+	</string>
+	<string id="val_escort_dead-0">
+		<text>Черт подери. Пусть земля тебе будет пухом, дружище.</text>
+	</string>
+	<string id="val_escort_guards-0">
+		<text>Скоро ты будешь работать обедом для мутантов. Гы-гы-гы!</text>
+	</string>
+	<string id="val_escort_guards-1">
+		<text>Готовься к фуршету, чувак. Ты - основное блюдо.</text>
+	</string>
+	<string id="val_escort_guards-2">
+		<text>Давай, шевели ногами!</text>
+	</string>
+	<string id="val_escort_guards-3">
+		<text>Ты быстрей двигайся, урод!</text>
+	</string>
+	<string id="val_escort_guards-4">
+		<text>Я те не завидую.</text>
+	</string>
+	<string id="val_escort_nap1_go_home-0">
+		<text>Жив-здоров? Тогда возвращаемся на базу за подмогой!</text>
+	</string>
+	<string id="val_escort_nap1_phrase1-0">
+		<text>Говори, сука! А то узнаешь, как легко пуля пробивает череп!</text>
+	</string>
+	<string id="val_escort_nap1_phrase1-1">
+		<text>Эй, дружище, иди сюда! Помоги отбить напарника у бандитов!</text>
+	</string>
+	<string id="val_escort_nap1_phrase2-0">
+		<text>Скорей же! Время не ждет!</text>
+	</string>
+	<string id="val_escort_nap1_phrase2-1">
+		<text>Блин, ну как хочешь.</text>
+	</string>
+	<string id="val_escort_nap1_phrase3-0">
+		<text>Давай за мной! Я знаю место для засады. Поможешь - буду благодарен. Долги в Долге возвращают.</text>
+	</string>
+	<string id="val_escort_nap1_phrase4-0">
+		<text>Спрячься на той стороне дороги. Они скоро появятся. Открывай огонь только после меня.</text>
+	</string>
+	<string id="val_escort_nap1_phrase5-0">
+		<text>Это вот сталкера благодари. Он мне помог.</text>
+	</string>
+	<string id="val_escort_nap1_phrase6-0">
+		<text>Идут! Сейчас мы их!</text>
+	</string>
+	<string id="val_escort_nap1_phrase7-0">
+		<text>Ладно, мразь, живи. Но на глаза мне больше не попадайся.</text>
+	</string>
+	<string id="val_escort_phrase_invite-0">
+		<text>Подходи, пообщаемся!</text>
+	</string>
+	<string id="val_prisoner_captive_come_here-0">
+		<text>Сюда! Помогите!</text>
+	</string>
+	<string id="val_prisoner_captive_help_me-0">
+		<text>На помощь!</text>
+	</string>
+	<string id="val_prisoner_captive_help_me-1">
+		<text>Кто-нибудь! Помогите!</text>
+	</string>
+	<string id="val_prisoner_captive_help_me-2">
+		<text>Чуваки, помогите! Меня порешат скоро!</text>
+	</string>
+	<string id="val_prisoner_captive_open-0">
+		<text>Эй, сталкер, помоги! Открой эту чертову клетку! Пульт управления находится на стене.</text>
+	</string>
+	<string id="val_prisoner_captive_thanx-0">
+		<text>Спасибо, друг. Я твой должник.</text>
+	</string>
+	<string id="val_rob_guard_jeer-0">
+		<text>Вали отсюда, пока цел, лошара!</text>
+	</string>
+	<string id="val_rob_leader_call-0">
+		<text>Слышь, брателло! Подойди-ка, у меня деловое предложение!</text>
+	</string>
+	<string id="val_rob_leader_jeer-0">
+		<text>Слушай меня внимательно, баклан! Ты слышал историю про Робина Гуда? Нет? А про Джорджа Справедливого? Так вот, твои бабки пошли в пользу бедных. Забудь про них и вали отсюда! Попробуешь сунуться ко мне, накостыляем - мама не узнает.</text>
+	</string>
+	<string id="val_sacrifice_guard1-speech-0">
+		<text>Ну давай, типа, собирайся! Боров сказал отвести этого болвана на старую фабрику.</text>
+	</string>
+	<string id="val_sacrifice_guard1-speech-1">
+		<text>Угу. А у меня есть идея.</text>
+	</string>
+	<string id="val_sacrifice_guard1-speech-2">
+		<text>А ну прыгай яму, козел!</text>
+	</string>
+	<string id="val_sacrifice_guard1-speech-3">
+		<text>Ну как хочешь!</text>
+	</string>
+	<string id="val_sacrifice_guard1-speech-4">
+		<text>Все. Нет человека - нет проблемы. Скажем Борову, что, типа, доставили пленника, куда следует. Идем.</text>
+	</string>
+	<string id="val_sacrifice_guard2-speech-0">
+		<text>Да он уже достал, в натуре! На этой неделе уже три раза туда!</text>
+	</string>
+	<string id="val_sacrifice_guard2-speech-1">
+		<text>Тсс... Слышал? Ой, что-то у меня дурное предчувствие. Короче, не хочется мне из лагеря уходить.</text>
+	</string>
+	<string id="val_sacrifice_victim-speech-0">
+		<text>Ребята, пожалуйста, отпустите меня! Не надо! Я вам денег дам! Да все отдам!</text>
+	</string>
+	<string id="val_sacrifice_victim-speech-1">
+		<text>Нет, я не прыгну туда! Хоть стреляйте!</text>
+	</string>
+	<string id="val_sacrifice_tunnel_bandit-speech-0">
+		<text>Ну в натуре Боров обнаглел! Я бля из Зоны пришел, устал, а он, курва, меня отправляет патрулировать лагерь. Да кто рискнет сюда пробраться? Не, короче, пойду-ка я лучше посплю, на хрена мне тут торчать? </text>
+	</string>
+	<string id="cc_characters_voice-scenario-val-patrol_prikaz">
+		<text>Группа Один и Два: проверить первый этаж. Группа Три - главный зал. Четвертая и пятая - второй этаж.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-val-val_desant_1">
+		<text>База, я - 034. Мы над точкой.
+		\n%c[255,240,217,182]Понял, начинайте работать.%c[default]
+		\n032, выбрасывай своих на крыши. Как понял?
+		\n%c[255,216,186,140]032 принял. На крыши - так на крыши.%c[default]</text>
+	</string>
+
+	<!-- Rostok -->
+
+	<string id="kruglov_stop_enemy_1-0">		<!-- copy of "bar_freedom_chase" -->
+		<text>Они идут за нами? Меченый, останови их!</text>
+	</string>
+	<string id="kruglov_stop_enemy_2-0">
+		<text>Меченый, Меченый, останови их! Они же нас прикончат!</text>
+	</string>
+	<string id="rostok_kruglov_help_1-0">
+		<text>Сталкер, помоги! Мы возвращались с Янтаря, когда нас сбили наемники. Говорят же, что им информация нужна, но я то знаю: перестреляют они нас.</text>
+	</string>
+	<string id="rostok_kruglov_help_2-0">
+		<text>Как скажешь, Меченый. Только иди первым. Ээээээ, а я - за тобой. Боец из меня плохой, лучше ты разведывай дорогу.</text>
+	</string>
+	<string id="rostok_kruglov_help_3-0">
+		<text>Наконец то мы в безопасности. Спасибо тебе за помощь. Я - твой должник. Возьми пока эту флешку. Это копия результатов последней экспедиции. Уверен, бармен за эту информацию хорошо заплатит.</text>
+	</string>
+	<string id="rostok_kruglov_help_4-0">
+		<text>Если зайдешь к нам в мобильную лабораторию на Янтаре, подарим тебе научный скафандр.</text>
+	</string>
+	<string id="rostok_kruglov_help_5-0">
+		<text>Засада! Засада!</text>
+	</string>
+	<string id="rostok_kruglov_help_6-0">
+		<text>Идем скорей! Пока никого нет!</text>
+	</string>
+	<string id="rostok_kruglov_torrid-0">
+		<text>Меченый, впереди в туннеле аномалия "жарка". Надо идти по одному. Так больше шансов выжить.
+		Иди первым. Когда я увижу, что ты дошел до конца, я пойду следом.
+		Остерегайся ловушек. Их можно обнаружить по искажениям горячего воздуха.</text>
+	</string>
+	<string id="rostok_volkodav_assistant_talk_1-0">
+		<text>Волкодав, пора начинать! Долг долго ждать не будет. Они обязательно придут на помощь Круглову.</text>
+	</string>
+	<string id="rostok_volkodav_assistant_talk_2-0">
+		<text>Но времени почти не осталось!</text>
+	</string>
+	<string id="rostok_volkodav_assistant_talk_3-0">
+		<text>Хорошо, атакуем сразу после охраны.</text>
+	</string>
+	<string id="rostok_volkodav_talk_1-0">
+		<text>Да погоди. Я не хочу зря терять людей. Выбейте охрану возле вертолета, тогда начнем.</text>
+	</string>
+	<string id="rostok_volkodav_talk_2-0">
+		<text>Выполняй! Мы успеем. Должны успеть.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-killer_radio_enemy_1">
+		<text>Волкодав, я не понял: он че - один перестрелял наших снайперов?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-killer_radio_enemy_2">
+		<text>Понял, понял. Сейчас отправляю.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-killer_radio_enemy_3">
+		<text>Вижу Круглова возле стройки. Сейчас мы его возьмем.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-sniper_radio_see_enemy_1">
+		<text>Волкодав, у нас гости. Какой-то Сталкер лэзэт прямо на нас. Что с ним будэм делать?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-sniper_radio_see_enemy_2">
+		<text>Понял, сдэлаем.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-sniper_shoot_enemy_1">
+		<text>Он под нами! Стреляйте сквозь пол!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-volkodav_radio_enemy_1">
+		<text>К вам лезет какой-то сталкер. Он, похоже, перестрелял наших снайперов. Будьте внимательны, идет от бара.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-volkodav_radio_enemy_2">
+		<text>Да, отправь пару ребят прикрыть ваши задницы.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-volkodav_radio_see_enemy_1">
+		<text>Ты что, не знаешь, что со свидетелями делать? Кончайте его! Без шума и пыли.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-volkodav_radio_snipers_dead_1">
+		<text>Шо там у вас происходит? Шо за стрельба? Меня слышно?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-volkodav_radio_snipers_dead_2">
+		<text>Отвечай, мать твою! Шо у вас происходит?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-Rostok-volkodav_radio_snipers_dead_3">
+		<text>Черт.</text>
+	</string>
+
+	<!-- Yantar -->
+
+	<string id="article_yan_ghost_pda">
+		<text>Призрак в X-16</text>
+	</string>
+	<string id="yantar_kruglov_radiation_quest_2-0">
+		<text>Подожди немного. Сейчас я замерю, и мы двинем дальше.</text>
+	</string>
+	<string id="yantar_kruglov_radiation_quest_5-0">
+		<text>Погоди, погоди... Так, так... Ага... Что?</text>
+	</string>
+	<string id="yantar_kruglov_radiation_quest_8-0">
+		<text>Аааааххх... Надо скорей выбираться отсюда!</text>
+	</string>
+	<string id="yantar_kruglov_radiation_quest_9-0">
+		<text>Замеры есть, осталось добраться до бункера.</text>
+	</string>
+	<string id="yantar_kruglov_radiation_quest_10-0">
+		<text>Вот замеры: тут, тут и тут. Все точно. Точнее быть не может.</text>
+	</string>
+	<string id="yantar_kruglov_to_professor_1-0">
+		<text>Мне плевать! Я один никуда не пойду.</text>
+	</string>
+	<string id="yantar_probe_1-0">
+		<text>Так-так. Немного зашкаливает, но излучение в норме. Надо идти дальше.</text>
+	</string>
+	<string id="yantar_probe_2-0">
+		<text>Хмм... Детектор, что ли барахлит? Меченый, нам надо к Круглову идти. Тут ничего понять не могу.</text>
+	</string>
+	<string id="yantar_probe_3-0">
+		<text>Все, судя по всему, надвигается выброс. Меченый, беги! Сейчас такое начнется! Аааааааааааааааааааа!!!!!!</text>
+	</string>
+	<string id="yantar_professor_idle-2">
+		<text>Так-так.</text>
+	</string>
+	<string id="yantar_professor_idle-3">
+		<text>Ну-ка что тут у нас?</text>
+	</string>
+	<string id="yantar_professor_idle-4">
+		<text>Фу, черт, опять - двадцать пять!</text>
+	</string>
+	<string id="yantar_professor_talk_1-0">
+		<text>Да-да?</text>
+	</string>
+	<string id="yantar_professor_talk_2-0">
+		<text>Just a second... I'm coming.</text>
+	</string>
+	<string id="yantar_professor_to_kruglov_1-0">
+		<text>Ну кроме тебя некому пойти, пойми это! Сейчас очень важно сделать калибровку.</text>
+	</string>
+	<string id="yantar_professor_to_kruglov_2-0">
+		<text>Я тебя очень прошу, сделай это! Мы все от этого зависим.</text>
+	</string>
+	<string id="yantar_professor_radiation_quest_2-0">
+		<text>Хорошо. Сейчас я попробую настроить прототип.</text>
+	</string>
+	<string id="system_message_1-1">
+		<text>Внимание! Пульт управления питанием биоустановки заблокирован. Сообщите офицеру безопасности.\n
+		Разблокируйте работающие установки.\n
+		Разблокируйте работающие установки.\n
+		Разблокируйте работающие установки.</text>
+	</string>
+	<string id="system_message_2-1">
+		<text>Установка Ц-12 разблокирована. Сообщите офицеру безопасности.</text>
+	</string>
+	<string id="system_message_3-1">
+		<text>Установка Ц-17 разблокирована. Сообщите офицеру безопасности.</text>
+	</string>
+	<string id="system_message_4-1">
+		<text>Установка Ц-23 разблокирована. Сообщите офицеру безопасности.</text>
+	</string>
+	<string id="system_message_5-1">
+		<text>Дверь заблокирована.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-dream_talk_r-1">
+		<text>Клык, мы не можем его так бросить.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-dream_talk_r-2">
+		<text>Бросай его. Ему уже ничем не поможешь. Скоро выброс. С ним мы не пробьемся.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-dream_talk_r-3">
+		<text>Нет, Клык, я его не брошу.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-ghost_pda-1">
+		<text>Где же ты, Стрелок? Черт!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-ghost_pda-2">
+		<text>И Доктор неизвестно где. Как бы мне пригодилась сейчас их помощь! Вернусь с задания - обязательно найду Проводника на Кордоне. Он там частенько бывает. А через него выйду на Доктора.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-ghost_pda-3">
+		<text>Если Стрелок все еще жив, то Доктор точно знает, где он. Н-да. Но это потом. А сейчас иду один... в эту чертову миссию подземелья. Васильев не в счет. Он - только обуза, которую придется оберегать…</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-ghost_pda-4">
+		<text>Васильев в последний момент струсил и вместо того, чтобы отключить нижние пульты, просто сбежал, когда открылась дверь.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-ghost_pda-5">
+		<text>Не надо было на него полагаться, правильно Стрелок не доверял этим лживым собакам. Мой единственный шанс - добраться до двери раньше контроллера...</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-vasiliev_pda-1">
+		<text>Все необходимые документы у нас. Мы знаем, как отключить излучатель. Вместе с Призраком продолжаем спускаться в лабораторию. Зомби повсюду лезут на свет...</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-vasiliev_pda-2">
+		<text>Все летит к чертям собачьим! Призрак абсолютно невменяем, несет какой-то бред. Похоже, его накрыло излучением. Я все бросил и ухожу по туннелям...</text>
+	</string>
+	<string id="cc_characters_voice-scenario-yantar-vasiliev_pda-3">
+		<text>Я на болотах, где бункер? Черт, черт подери!!! Я не могу определить где я нахожусь! Сахаров не отвечает!!! Что происходит... Кругом зомби, у меня кончаются патроны... Аaa!</text>
+	</string>
+
+	<!-- Military -->
+
+	<string id="mil_ara_ambush-0">
+		<text>Черт, это засада! Предатэль! Уходым, быстро!</text>
+	</string>
+	<string id="mil_cherep_hi-0">
+		<text>Эй, сталкер. Есть работа для хорошего стрелка. Подходи, если интересно, или вали.</text>
+	</string>
+	<string id="mil_collect_phrase1-0">
+		<text>Покрошим супостатов! Не боись!</text>
+	</string>
+	<string id="mil_collect_phrase2-0">
+		<text>Эх, давно не брал я саблю в руки...</text>
+	</string>
+	<string id="mil_collect_phrase3-0">
+		<text>Мальчишек мочить симпатичных будем? Хе-хе-хе-хе.</text>
+	</string>
+	<string id="mil_collect_phrase4-0">
+		<text>Не, ну че всегда все происходит не вовремя, а?</text>
+	</string>
+	<string id="mil_collect_phrase5-0">
+		<text>Не срать! Ха-ха-ха-ха.</text>
+	</string>
+	<string id="mil_collect_phrase6-0">
+		<text>О-ба! С нами новое мясо! Шучу.</text>
+	</string>
+	<string id="mil_collect_phrase7-0">
+		<text>Давно пора размяться, а то все - водка, водка.</text>
+	</string>
+	<string id="mil_crazy-0">
+		<text>Вали отсюдова!</text>
+	</string>
+	<string id="mil_crazy-1">
+		<text>Не подходи - замочу!</text>
+	</string>
+	<string id="mil_crazy-2">
+		<text>Я дурак и у меня справка есть!</text>
+	</string>
+	<string id="mil_crazy-3">
+		<text>Врагу не сдается наш гордый Варяг, пощады никто не желает!</text>
+	</string>
+	<string id="mil_dolg_after_kill1-0">
+		<text>Все, спеклись пташки.</text>
+	</string>
+	<string id="mil_dolg_after_kill2-0">
+		<text>Допрыгались, анархисты хреновы.</text>
+	</string>
+	<string id="mil_dolg_after_kill3-0">
+		<text>Да все, готовы.</text>
+	</string>
+	<string id="mil_dolg_about_sniper-0">
+		<text>Следит, урод. Ну, ничего. Недолго тебе там сидеть осталось.</text>
+	</string>
+	<string id="mil_dolg_stalker0006_0000-speech-0">
+		<text>C... Тихо, мужик!</text>
+	</string>
+	<string id="mil_dolg_go_attack-0">
+		<text>Вперед, ребята! Путь свободен.</text>
+	</string>
+	<string id="mil_dolg_getready-0">
+		<text>Приготовились, сейчас рванет!</text>
+	</string>
+	<string id="mil_dolg_before_attack1-0">
+		<text>Подъем, бойцы. Настал наш черед.</text>
+	</string>
+	<string id="mil_dolg_before_attack2-0">
+		<text>Действуем по плану. Вперед!</text>
+	</string>
+	<string id="mil_freedom_ambush1-0">
+		<text>Осторожно, аномалия!</text>
+	</string>
+	<string id="mil_freedom_ambush2-0">
+		<text>Под ноги смотрите!</text>
+	</string>
+	<string id="mil_freedom_ambush3-0">
+		<text>А чуваки на базе водку пьют...</text>
+	</string>
+	<string id="mil_freedom_ambush4-0">
+		<text>Стволы с патронами проверьте - мало ли...</text>
+	</string>
+	<string id="mil_freedom_ambush5-0">
+		<text>Как я... не люблю бегать.</text>
+	</string>
+	<string id="mil_freedom_ambush6-0">
+		<text>Все, замолкли. Расходимся.</text>
+	</string>
+	<string id="mil_freedom_patrol-0">
+		<text>Э! Стой, сталкер. Ты на территории Свободы. Это обычная проверка - не ссы!</text>
+	</string>
+	<string id="mil_freedom_patrol_base-0">
+		<text>Стоять! Это обычная проверка - не боись!</text>
+	</string>
+	<string id="mil_freedom_patrol_base-1">
+		<text>Стоять! Ты че - пулю захотел?</text>
+	</string>
+	<string id="mil_freedom_patrol_base-2">
+		<text>Всем стоять! Трамваям прижаться вправо.</text>
+	</string>
+	<string id="mil_freedom_zoneguard-0">
+		<text>Стой, раз-два.</text>
+	</string>
+	<string id="mil_freedom_victory1-0">
+		<text>Как мы их, а? Вояк, хреновых.</text>
+	</string>
+	<string id="mil_freedom_victory2-0">
+		<text>Даже неинтересно как-то получилось.</text>
+	</string>
+	<string id="mil_freedom_victory3-0">
+		<text>Слабаки...</text>
+	</string>
+	<string id="mil_freedom_victory4-0">
+		<text>А нас всего на одного больше было.</text>
+	</string>
+	<string id="mil_freedom_victory5-0">
+		<text>Все, братва. Возвращаемся домой. Это надо отметить.</text>
+	</string>
+	<string id="mil_kolyan-0">
+		<text>Вот как в зад - так сразу "Колян"!</text>
+	</string>
+	<string id="mil_max_to_actor-0">
+		<text>Подходи, пообщаемся!</text>
+	</string>
+	<string id="mil_max_to_kolyan-0">
+		<text>Колян, ты с ребятами постараешься зайти им в зад.</text>
+	</string>
+	<string id="mil_max_to_tolyan-0">
+		<text>Так, Толик, берешь Лысого и Косого. Зайдете справа.</text>
+	</string>
+	<string id="mil_paul_frost-0">
+		<text>Пойду... отолью, пожалуй.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_1">
+		<text>Первый, вижу две цели. Снайпер на вышке...
+		\n%c[255,240,217,182]Четвертый, Пятый - займитесь.%c[default]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_2">
+		<text>Второй, бери Третьего, Четвертого и Пятого налево, в обход казармы.
+		\n%c[255,240,217,182]Понял.%c[default]
+		\nТретий, следи за вышками. Четвертый, Пятый - прикрывайте!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_3">
+		<text>Справа от костра, за ящиком. Четвертый, твой!
+		\nГотов, гад.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_4">
+		<text>Подходим к дому. Шестой прикрывает. Остальные - за мной!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_5">
+		<text>Первый, осторожно! На вышке урод с оптикой!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_6">
+		<text>Трое в экзоскелетах по центру! Пятый, шмаляй по бочкам!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_7">
+		<text>Первый, прошли двор, идем к вам. Прием.
+		\n%c[255,240,217,182]Понял тебя, Второй.%c[default]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_base_attack_8">
+		<text>Заходим в здание. Восьмой, проверь лестницу!
+		\nСидит, урод.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_dolg_down_1">
+		<text>Третий убит!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_dolg_down_2">
+		<text>Пятый, пятый! Черт, Пятый убит.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_dolg_down_3">
+		<text>Первый погиб. Я Второй. Беру командование на себя.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_dolg_down_4">
+		<text>Славка убит! Суки! Суки, суки!
+		\n%c[255,240,217,182]Седьмой, прекратить истерику!%c[default]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_dolg_down_5">
+		<text>Командир, надо валить! Их здесь больше, чем мы думали!
+		\n%c[255,240,217,182]Отставить, продолжаем операцию.%c[default]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_enemy_down_1">
+		<text>Готов.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_enemy_down_2">
+		<text>Снайпер ушел.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_enemy_down_3">
+		<text>Справа бомж! Срезал.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-military-dolg_attack-base-mil_mission_complete">
+		<text>Цель уничтожена. Задание выполнено. Отходим. Всем: отходим.</text>
+	</string>
+	<string id="cc_mil_guard_to_max-0-1">
+		<text>Макс!</text>
+	</string>
+	<string id="cc_mil_guard_to_max-0-2">
+		<text>Слушаю.</text>
+	</string>
+	<string id="cc_mil_guard_to_max-0-3">
+		<text>У нас тут проблема на хуторе нарисовалась. Собирай народ.</text>
+	</string>
+	<string id="cc_mil_guard_to_max-0-4">
+		<text>Понял.</text>
+	</string>
+	<string id="cc_mil_pavlik_to_ara-0-1">
+		<text>Все чисто. Можете подходить.</text>
+	</string>
+	<string id="cc_mil_pavlik_to_ara-0-2">
+		<text>Вас там не было.</text>
+	</string>
+	<string id="cc_mil_pavlik_to_ara-0-3">
+		<text>Не было, не было. В первый раз, что ли?</text>
+	</string>
+	<string id="cc_mil_pavlik_to_ara-0-4">
+		<text>Выдвигаемся.</text>
+	</string>
+	<string id="cc_mil_ara_to_pavlik-0-1">
+		<text>Ну что, Павлуша, ты нам на этот раз приволок?</text>
+	</string>
+	<string id="cc_mil_ara_to_pavlik-0-2">
+		<text>Информация проверенная. Вот папка.</text>
+	</string>
+	<string id="cc_mil_ara_to_pavlik-0-3">
+		<text>Так, посмотрим.</text>
+	</string>
+
+	<!-- Radar -->
+
+	<string id="cc_characters_voice-scenario-radar-rad_hat_1">
+		<text>Внимание! Критическое излучение. Немедленно покиньте опасную зону!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-radar-rad_hat_2">
+		<text>Внимание! Защита отключена!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-bun-patrol_prikaz">
+		<text>Нестандартная ситуация. Обеспечьте безопасность немедленно.
+		\nПервый этаж, второй этаж, главный зал.
+		\nУничтожьте нарушителей. Подавить вторжение.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-radar-rad_soldier_des_1">
+		<text>База, это 056. Отсутствие излучения подтверждено. Крупных скоплений противника не обнаружено. Вепря... высадил в районе антенн для разведки. Жду дальнейших указаний.
+		\n%c[255,216,186,140]056, это база. Возвращайтесь домой. Вепрь, доложите обстановку.%c[default]
+		\n%c[255,240,217,182]База, это Вепрь. Сопротивление минимальное. Кто-то прошел здесь до нас.%c[default]
+		\n%c[255,216,186,140]Вепрь, приказ: установить карантинный режим на территории антенн. Нарушителей режима уничтожать без предупреждения!%c[default]
+		\n%c[255,240,217,182]База, вас понял.%c[default]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-radar-rad_freedom_dolg_1">
+		<text>Отряд Свободы, прием. Это командир спецотряда Долга. Приказываю вам развернуться и валить отсюда на хрен! В центре Зоны вам делать нечего!
+		\n%c[255,240,217,182]Нифига себе. Ты че ваще тут раскомандовался? Ща мы вам покажем, кто и куда валить отсюда должен!%c[default]
+		\n%c[255,240,217,182]Ребята, намыль им задницы!%c[default]</text>
+	</string>
+
+	<!-- Pripyat -->
+
+	<string id="pri_followers_final_phrase2-0">
+		<text>Меченый, иди сюда! Поговорить надо.</text>
+	</string>
+	<string id="pri_followers_leader_phrase1_1-0">
+		<text>Орлы, слушайте меня внимательно. Будем пробиваться к станции. Город кишит монолитовцами и прочей нечистью. Поэтому смотреть в оба и прикрывать друг друга! Все. Проверяете стволы и выдвигаемся вперед по аллее. Готовность пятнадцать секунд.</text>
+	</string>
+	<string id="pri_followers_leader_phrase1_2-0">
+		<text>Ты, наверно, Меченый? Мне о те говорил бармен. Давай пробиваться вместе.</text>
+	</string>
+	<string id="pri_followers_leader_phrase1_3-0">
+		<text>Вперед!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_actor_leave_phrase">
+		<text>Меченый, я вижу, у тебя своя дорога. Что ж - удачи тебе!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_btr_phrase1_2">
+		<text>Ха-ха! Отлично!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_btr_phrase2_1">
+		<text>Щас я эту суку сниму.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_btr_phrase2_2">
+		<text>Нет, Сашка...</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_crossroads_phrase">
+		<text>Так, судя по карте, нам направо. Там есть безопасный проход под землей.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight01">
+		<text>Вспышка слева вверху!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight02">
+		<text>Фанатики справа!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight03">
+		<text>В укрытие! Они в окнах!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight04">
+		<text>Вспышка на крыше слева!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight05">
+		<text>Крыша справа!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight06">
+		<text>Получай, сука!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight07">
+		<text>Фанатик слева на крыше!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight09">
+		<text>У окна! Слева и справа!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight12">
+		<text>Справа! На балконе и в окне!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight13">
+		<text>Один на крыше справа!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight14">
+		<text>Слева!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_fight15">
+		<text>Справа за трубами!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill1">
+		<text>Получай, падла!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill2">
+		<text>Готов!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill3">
+		<text>Я снял одного!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill4">
+		<text>Хе, следующий!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill5">
+		<text>Минус один!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill6">
+		<text>Отлично!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_kill7">
+		<text>В яблочко!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_start_phrase1">
+		<text>Во, военные. Хотят первыми добраться к центру - снять все сливки. Ничего, мы там тоже скоро будем. Вперед, парни.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_underground_phrase1">
+		<text>Подземная автостоянка. Значит, мы в центре Припяти. Передвигаться тихо. Недалеко центральная база Монолита. Вперед, скоро мы будем на станции.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_underground_phrase2">
+		<text>Засада! Мочи их!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_underground_phrase3">
+		<text>Назад, назад! Их слишком много! Отступаем!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_wave1_end_phrase">
+		<text>Чисто. Всем перегруппироваться и двигаемся дальше.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_wave2_end_phrase">
+		<text>Ну и потрепало нас.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_wave2_start_phrase">
+		<text>Вперед, ребята!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_wave4_end_phrase">
+		<text>Вперед, вперед!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_wave4_start_phrase">
+		<text>Двигаемся вперед.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-followers_wave6_end_phrase">
+		<text>Отстрелялись и идем дальше.</text>
+	</string>
+
+	<!-- AES -->
+
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_1">
+		<text>Выброс, командир. Валим на хер...
+		\n%c[255,240,217,182]Двигайтесь, Земля: выброс... Мы ушли...%c[default]
+		\nДавай, давай, давай. Сваливаем.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_2">
+		<text>Внимание всем: выброс. Рассредоточиться по укрытиям...
+		\n%c[255,240,217,182]Ни хера себе! Прибор зашкалило, командир...%c[default]
+		\nНоги, ноги!...
+		\n%c[255,240,217,182]Где бы норочку уютную найти?%c[default]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_3">
+		<text>Ястреб, всем укрыться!
+		\n%c[255,240,217,182]Командир, сваримся на хер. Нормальное укрытие надо...%c[default]
+		\nСапсан, давай наших внутрь...
+		\nЯстреб, понял? Сапсан, слушай меня: всем огонь по входу...
+		\nВсе, почистили. Сапсан-6, прикрывай... Ну, давай. Все, пошли, пошли!</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes2_trader_ask">
+		<text>Меченый? Какого черта?</text>
+	</string>
+
+	<!-- Sarcofag -->
+
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_1">
+		<text>Твоя цель здесь. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_2">
+		<text>Твой путь завершается. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_3">
+		<text>Вознагражден будет только один.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_4">
+		<text>Твое желание скоро исполнится. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_5">
+		<text>Пришло время. Я вижу твое желание.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_6">
+		<text>Путь завершен, человек. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_7">
+		<text>Иди ко мне. Ты обретешь то, что заслуживаешь.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e1">
+		<text>Твоя цель здесь. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e2">
+		<text>Твой путь завершается. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e3">
+		<text>Вознагражден будет только один.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e4">
+		<text>Твое желание скоро исполнится. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e5">
+		<text>Пришло время. Я вижу твое желание.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e6">
+		<text>Путь завершен, человек. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_e7">
+		<text>Иди ко мне. Ты обретешь то, что заслуживаешь.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h1">
+		<text>Твоя цель здесь. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h2">
+		<text>Твой путь завершается. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h3">
+		<text>Вознагражден будет только один.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h4">
+		<text>Твое желание скоро исполнится. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h5">
+		<text>Пришло время. Я вижу твое желание.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h6">
+		<text>Путь завершен, человек. Иди ко мне.</text>
+	</string>
+	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_h7">
+		<text>Иди ко мне. Ты обретешь то, что заслуживаешь.</text>
+	</string>
+	<string id="mon_monolith_alarm-1">
+		<text>Авария! Недостаточно энергии для поддержания работоспособности установки.</text>
+	</string>
+	<string id="mon_monolith_damaged-1">
+		<text>Внимание! Энергетические блоки повреждены. Уровень питания установки снизился.</text>
+	</string>
+	<string id="mon_monolith_heavy_damaged-1">
+		<text>Внимание! Уровень питания установки снизился до критической отметки.</text>
+	</string>
+	<string id="mon_monolith_recharged-1">
+		<text>Включена резервная цепь питания монолита. Питание монолита переведено на лабораторию О-Сознания.</text>
+	</string>
+
+	<!-- Sounds by snd_path -->
+
+	<string id="cc_monsters-bloodsucker-bloodsucker_script_attack_0">
+		<text>[атака мутанта]</text>
+	</string>
+	<string id="cc_monsters-giant-giant_underground_0">
+		<text>[атака псевдогиганта]</text>
+	</string>
+	<string id="cc_monsters-poltergeist-die_0">
+		<text>[смерть полтергейста]</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin">
+		<text>[военное радио]</text>
+	</string>
