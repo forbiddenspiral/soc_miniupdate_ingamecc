@@ -1,0 +1,602 @@
+---------------------------------------------------------------------------------------------------------------------
+--	����� ������� (Scheme of voice set)
+--	�����:  ������� ������ -- Ruslan Didenko (Stohe)
+--	update: ����� ��������� -- Chugai Alexander (Chugai)
+--	update 2: NatVac 2010/08/18
+--		support for rmk_type to fix xr_meet, animation, etc. sounds from overly repeating
+--		sounds now follow the type/min/max/rnd settings in sound_theme.script
+----------------------------------------------------------------------------------------------------------------------
+-- keep these the same as in sound_theme.script - note play_sound order dependency!
+local rmk_chatter   = 0 -- one second
+local rmk_react     = 1 -- one to two
+local rmk_muse      = 2 -- three to five
+local rmk_once      = 3 -- three to five, played only once
+local rmk_greet     = 4 -- requires min/max
+local rmk_sporadic  = 5 -- requires min/max
+local rmk_priority  = 6 -- requires min/max
+
+key_by_id = {}
+group_idle = {}
+
+--[[
+--function printf()
+--end
+
+function print_table(table, subs)
+  local sub
+  if subs ~= nil then
+    sub = subs
+  else
+    sub = ""
+  end
+  for k,v in pairs(table) do
+    if type(v) == "table" then
+      dbglog(sub.."%s:", tostring(k))
+      print_table(v, sub.."    ")
+    elseif type(v) == "function" then
+      dbglog(sub.."%s:function", tostring(k))
+    elseif type(v) == "userdata" then
+      dbglog(sub.."%s:userdata", tostring(k))
+    elseif type(v) == "boolean" then
+	if v == true then
+		dbglog(sub.."%s:true", tostring(k))
+	else
+		dbglog(sub.."%s:false", tostring(k))
+	end
+    else
+      if v ~= nil then
+        dbglog(sub.."%s:%s", tostring(k),v)
+      else
+        dbglog(sub.."%s:nil", tostring(k),v)
+      end
+    end
+  end
+end
+--]]
+
+function get_sound(path, tt, npc)
+	local snd_result
+	if path == nil then return nil end
+	if path.exec == nil then
+		-- ������ �������� ����
+		tt.rmk_type = path.rmk_type
+		if tt.rmk_type == nil then return nil end
+		local npc_id_tbl = path.max_ids[npc:id()]
+		tt.into_id = path.into_id
+		tt.into_max = npc_id_tbl.into_max
+		tt.into_cycled = npc_id_tbl.into_cycled
+		-- tt.into_last = nil --nv 100808 not used
+
+		tt.rnd_id = path.rnd_id
+		tt.rnd_max = npc_id_tbl.rnd_max
+		-- tt.rnd_last = nil --nv 100808 not used
+
+		if tt.rmk_type > rmk_once then
+			tt.min_snd = path.min_snd or 1
+			tt.max_snd = path.max_snd or 2
+			tt.rnd     = path.rnd --or 100
+		end
+		snd_result = tt.rmk_type
+	else
+		snd_result = get_sound(path.types[path.exec(path.types, npc)], tt, npc)
+	end
+	return snd_result
+end
+-- ������������ ����� ���������
+function get_key(npc)
+	local key
+	local npc_id = npc:id()
+
+	-- ������������ �����
+	local overrides = xr_logic.generic_scheme_overrides(npc)
+	if overrides and
+		overrides.soundgroup
+	then
+		key = overrides.soundgroup
+	else
+		key = utils.to_str(npc_id)
+	end
+
+	-- ������ ������ :) �� ������!
+	local keyid = xr_sound.key_by_id[npc_id]
+	if keyid ~= key then
+		if xr_sound.group_idle[keyid] ~= nil	then
+			xr_sound.group_idle[keyid].num_in_group = xr_sound.group_idle[keyid].num_in_group - 1
+		end
+		xr_sound.key_by_id[npc_id] = key
+		if xr_sound.group_idle[key] == nil then
+			xr_sound.group_idle[key] = {num_in_group = 1}
+		else
+			xr_sound.group_idle[key].num_in_group = xr_sound.group_idle[key].num_in_group + 1
+		end
+	end
+	return key
+end
+
+-----------------------------------------------------------------------------------------------------------------------------------
+--	��������� � ������������� ��� � �����.
+------------------------------------------------------------------------------------------------------------------------------
+-- assign a sound to an NPC to be played during a later update()
+function set_sound(npc, sound, now, into_timeout)
+	-- dbglog("SND:  [%s] try to change SND to [%s]", npc:name(), tostring(sound))
+
+	local npc_id = npc:id()
+	local was_nil = false
+	if db.sound[npc_id] == nil then
+		db.sound[npc_id] = {}
+		was_nil = true
+	end
+	local npc_sounds = db.sound[npc_id]
+	if was_nil or npc_sounds.theme ~= sound or now == true then
+--		if npc_sounds == nil then
+--			printf("*SND* change SND [_] to [%s] for [%s]", tostring(sound), npc:name())
+--		else
+--			printf("*SND* change SND [%s] to [%s] for [%s]", tostring(npc_sounds.theme), tostring(sound), npc:name())
+--		end
+		-- ������� ������� ���������� ����� ��� � �� id
+		if sound == nil then sound = "" end
+		-- if npc_sounds == nil then npc_sounds = {} end
+		npc_sounds.theme = sound
+		npc_sounds.snd = parse_names(sound)
+		if npc_sounds.last_snd == nil then
+			npc_sounds.last_snd = {}
+		else
+			local snd_table = {}
+			local t = 0
+			local snd_result
+			for k,v in pairs(npc_sounds.snd) do
+				snd_table[t] = {}
+				if sound_theme.theme[v] == nil then
+					dbglog("sound_theme.theme[%s] is nil",tostring(v))
+				else
+					snd_result = get_sound(sound_theme.theme[v], snd_table[t], npc)
+					if snd_result ~= nil then -- nil means combat state
+						t = t + 1
+					end
+				end
+			end
+			if t == 0 then -- no sound found
+				-- dbglog("SND:  No sound for [%s] found for [%s]", tostring(sound), npc:name())
+				npc_sounds.snd = {}
+				if now == true then stop_play_sound(npc) end
+				return
+			end
+			for k,v in pairs(snd_table) do -- reset previous sound theme settings for chatter
+				if v.rmk_type == nil then
+					-- dbglog("set_sound(): npc: "..npc:name().." = empty entry in sound table for sounds ".."["..tostring(sound).."] k="..tostring(k)..", v="..tostring(v))
+					-- print_table(v)
+				elseif v.rmk_type < rmk_greet then
+					if v.into_id then npc_sounds.last_snd[v.into_id] = nil end
+					if v.rnd_id then npc_sounds.last_snd[v.rnd_id] = nil end
+				end
+			end
+		end
+		-- ������������� ������� �����
+		local key = get_key(npc)
+		local group_table = xr_sound.group_idle[key]
+		if now == true then -- replace any current sound with this new one at next update
+			stop_play_sound(npc)
+		end
+		if into_timeout then
+			group_table.busy_until = time_global() + into_timeout
+		else
+			group_table.busy_until = time_global() + 250 --a small delay
+		end
+	end
+end
+
+-- play a sound now or after a set delay
+-- used by kamp logic to manage conversations and by animation logic to sync remarks
+function set_sound_play(npc, sound, timeout)
+	-- dbglog("SND: set_sound_play SND from [%s] for [%s]", tostring(sound), npc:name())
+	local npc_id = npc:id()
+	if db.sound[npc_id] == nil then db.sound[npc_id] = {} end
+	local npc_sounds = db.sound[npc_id]
+	if npc_sounds.last_snd == nil then
+		npc_sounds.last_snd = {}
+	end
+
+	npc_sounds.theme = sound
+	npc_sounds.snd = parse_names(sound)
+
+	local key = get_key(npc)
+	-- key could be npc or npc's 'kamp'
+	local group_table = xr_sound.group_idle[key]
+
+	stop_play_sound(npc)
+	this.play_sound(npc, group_table, timeout)
+	-- npc_sounds.snd = nil
+end
+
+function update(npc)
+	if npc:active_sound_count() ~= 0 then return end
+	local npc_id = npc:id()
+
+	--' ���� ������ ����, �� ����� ������ ��.
+	--' ���� �� ������, �� ����� ������ idle, ��� ������� ��� � ��� ��� ������ � ��������.
+	local npc_sounds = db.sound[npc_id]
+	if npc_sounds ~= nil and npc_sounds.snd == nil then
+		return
+	end
+	-- if npc_sounds.snd.done then return end
+
+	local key = get_key(npc)
+
+	local group_table = xr_sound.group_idle[key]
+	if group_table == nil then -- may not be possible
+		return
+	end
+
+	-- if the last speaker is done, we can continue
+	if group_table.busy == true then
+		if group_table.last_npc ~= npc_id then
+			return
+		end
+		-- if npc:active_sound_count() == 0 then
+		group_table.busy = false
+		-- end
+	end
+
+	if group_table.num_in_group > 1 and
+	   group_table.last_npc == npc_id then
+		-- let someone else have a chance to speak first
+		return
+	end
+
+	if #npc_sounds.snd == 0 then
+		-- dbglog("no sound for "..npc:name())
+		-- threat situation?
+		return
+	end
+
+--	printf("EE: group = %s begin = %s idle = %s", tostring(key), tostring(group_table.begin), tostring(group_table.idle))
+	-- if group_table.begin == nil or group_table.idle == nil or
+	   -- time_global() - group_table.begin >= group_table.idle
+	if group_table.busy_until == nil or time_global() > group_table.busy_until then
+		-- this.play_sound(npc, db.sound[npc_id].snd)
+		this.play_sound(npc, group_table)
+		-- if group_table.idle == nil then -- idle isn't used any more
+			-- group_table.idle = 0
+		-- end
+		-- moved
+		-- group_table.busy = true
+		-- group_table.begin = time_global()
+		-- group_table.last_npc = npc_id
+	end
+end
+
+
+-- function play_sound(npc, themes, timeout)
+function play_sound(npc, group_table, timeout)
+	local npc_id = npc:id()
+	local npc_sounds = db.sound[npc_id]
+	-- ����� ��������� ������ ���
+	local snd_table = {}
+	local t = 0
+	local snd_result
+	-- for k,v in pairs(themes) do
+	for k,v in pairs(npc_sounds.snd) do
+		snd_table[t] = {}
+		if sound_theme.theme[v] ~= nil then
+			snd_table[t].theme = v
+			snd_result = get_sound(sound_theme.theme[v], snd_table[t], npc)
+			if snd_result ~= nil then
+				t = t + 1 --iterator moved here as protection for quit_on_abort = false
+			end
+		else
+			abort("ERROR: INVALID PLAY SOUND %s for %s", v, npc:name())
+		end
+	end
+	--printf("*")
+	-- print_table(snd_table)
+	if t == 0 then return end -- dbglog("no sound for "..npc:name())
+
+	-- local group_table = xr_sound.group_idle[get_key(npc)] -- this is now passed in
+	group_table.last_npc = npc_id -- no matter what we do, give someone else a chance later
+
+	-- kamps (groups) can mix sound themes, but some themes are annoying at kamp repetition rates
+	-- the fix is to use the theme min/max sound delays on the theme and not the group
+	local idle = 1000
+
+	-- �� ������ ��� �������� ����.
+	local snd = snd_table[math.random(0, t-1)]
+	if snd == nil or snd.rmk_type == nil then
+		-- dbglog("snd == nil or snd.rmk_type == nil for "..npc:name())
+		group_table.busy_until = time_global() + idle
+		group_table.busy = true --not really here, but useful to pretend so
+		return
+	 end
+	--print_table(snd)
+
+	local theme_idle = 0
+	local global_time
+	local snd_type = snd.rmk_type
+	if snd_type > rmk_once then
+		if snd_type == rmk_priority and npc_sounds.last_theme_id ~= snd.rnd_id then
+			npc_sounds.busy_until = nil
+			npc_sounds.last_theme_id = snd.rnd_id
+		end
+		if npc_sounds.busy_until == nil or time_global() > npc_sounds.busy_until then
+			-- we're good to go on this sound
+			theme_idle = math.random(snd.min_snd*1000, snd.max_snd*1000)
+			if snd.rnd and math.random(100) > snd.rnd then -- we don't play a sound this time
+				global_time = time_global()
+				group_table.busy_until = global_time + idle -- we add a default second of group delay
+				npc_sounds.busy_until  = global_time + theme_idle
+				group_table.busy = true
+				return
+			end
+			-- if npc_sounds.theme == "esc_shustryi_help" then
+				-- dbglog("current time is "..tostring(time_global()/1000).." - next play at "..tostring(npc_sounds.busy_until)/1000)
+			-- end
+		else -- we're not ready to play this NPC's moans or greetings - don't change theme delay
+			group_table.busy_until = time_global() + idle -- we still add some group delay
+			group_table.busy = true
+			return
+		end
+	else
+		if snd_type > rmk_react then --rmk_muse or rmk_once
+			idle = math.random(32, 50) * 100 -- this yields 1/10 second random numbers
+		elseif snd_type == rmk_react then
+			idle = math.random(10, 20) * 100
+		end
+		-- default group delay uses rmk_chatter idle
+		theme_idle = idle
+	end
+
+	-- print_table(snd_table)
+	-- we don't update this unless we are ready to play a sound
+	group_table.busy = true
+
+	if group_table.last_snd	== nil then
+		group_table.last_snd = {}
+	end
+	-- ���������� �� ��� ������ into ��� rnd �����
+	if snd.into_max ~= nil and snd.into_max > 0 then
+		local last_seq = npc_sounds.last_snd[snd.into_id]
+		if last_seq == nil then --not played any yet
+			last_seq = -1 --start new
+		elseif last_seq == snd.into_max - 1 then --last sound in sequence
+			-- dbglog("snd.into_cycled = "..tostring(snd.into_cycled).." for theme "..npc_sounds.theme)
+			if snd.into_cycled == true then
+				-- npc_sounds.last_snd[snd.into_id] = nil
+				last_seq = -1 --start over
+			else
+				group_table.busy = false
+				--snd theme isn't supposed to be played again
+				global_time = time_global()
+				group_table.busy_until = global_time + idle
+				npc_sounds.busy_until  = global_time + 86400000
+				return --we're done
+			end
+		end
+
+		-- ������ �������
+		-- if npc_sounds.last_snd[snd.into_id] == nil then npc_sounds.last_snd[snd.into_id] = -1 end
+
+		--printf("*SND* play seq [%s] for [%s]", npc_sounds.last_snd[snd.into_id]+1, npc:name())
+		-- process_tutor_on_sound(snd.theme)
+		local this_seq = last_seq + 1
+		npc:play_sound(snd.into_id, 1, 0, 1, 0, this_seq)
+		npc_sounds.last_snd[snd.into_id] = this_seq
+		group_table.last_snd[snd.into_id] = this_seq -- new way
+		if closecaption then
+		closecaption.cc_display_npcsnd_theme(snd.into_id, snd.theme .. "-" .. this_seq, npc)	-- npc:name() .. "-" ..
+		end
+		-- npc_sounds.snd.done = true -- seq sounds are invoked via set_sound_play() with new table
+		--printf("*SND* play seq [%s] for [%s]", npc_sounds.last_snd[snd.into_id], npc:name())
+		-- dbglog("SND: play %s seq [%s] for [%s]", snd.into_id, this_seq, npc:name())
+		-- return -- no, fall through to normal exit
+	-- end
+	-- if snd.rnd_max ~= nil and
+	elseif snd.rnd_max ~= nil and snd.rnd_max > 0 then
+		-- ������ ���������
+		local s = 0
+		local last_rnd = group_table.last_snd[snd.rnd_id]
+		if snd.rmk_type > rmk_once then last_rnd = npc_sounds.last_snd[snd.rnd_id] end
+		-- if snd.rnd_max == 1 then
+			-- -- s = 0
+			-- if last_rnd ~= nil then
+				-- return -- we've already played this sound this session
+			-- end
+		-- else
+		if snd.rnd_max > 1 then
+			-- ���� ������� ��� ������������ ����� �� ����� ���
+			-- �� ��������� ��������� ���� ��� ������.
+--				if npc_sounds.last_snd[snd.rnd_id] ~= nil then
+			if last_rnd == nil then
+				s = math.random(0, snd.rnd_max-1)
+			else
+				-- we've already played a sound from this group in this session
+				s = math.random(0, snd.rnd_max-2)
+				if s >= last_rnd then s = s + 1 end
+			end
+		end
+
+		if timeout == nil then -- timeout apparently expected only on rnd sounds
+			timeout = 0
+		end
+		--printf("*SND* play rnd [%s] for [%s]", s, npc:name())
+		-- process_tutor_on_sound(snd.theme)
+		npc:play_sound(snd.rnd_id, timeout+1, timeout, 1, 0, s)
+		if closecaption then
+		closecaption.cc_display_npcsnd_theme(snd.rnd_id, snd.theme .. "-" .. s, npc)	-- npc:name() .. "-" ..
+		end
+		npc_sounds.last_snd[snd.rnd_id] = s
+		group_table.last_snd[snd.rnd_id] = s
+		-- dbglog("SND: play %s rnd [%s] for [%s]", snd.rnd_id, s, npc:name())
+	end
+	if snd_type == rmk_once then npc_sounds.snd = nil end
+	global_time = time_global()
+	group_table.busy_until = global_time + idle
+	npc_sounds.busy_until  = global_time + theme_idle
+end
+
+function get_last_IDS(npc, theme)
+	local last_table = db.sound[npc:id()].last_snd
+	local snd_table = {}
+	if sound_theme.theme[theme] ~= nil then
+		get_sound(sound_theme.theme[theme], snd_table, npc)
+	end
+	-- printf("LAST INTO ID for [%s] = [%s], max [%s]", theme, last_table[snd_table.into_id], snd_table.into_max)
+	return last_table[snd_table.into_id], snd_table.into_max
+end
+
+
+function load_sound(npc)
+	sound_theme.load_sound(npc)
+end
+
+-- nv 100808 - removed empty function and references
+-- function process_tutor_on_sound(theme)
+-- end
+
+
+--' Actor sound player
+local actor_sound = {}
+function set_actor_sound(sound)
+	-- printf("*ACTOR SND* try to change SND to [%s]", tostring(sound))
+	if actor_sound.theme ~= sound then
+		--' ������� ������� ���������� ����� ��� � �� id
+		if sound == nil then sound = "" end
+		actor_sound.theme = sound
+		actor_sound.begin = nil
+
+		this.set_actor_sound_factor(1)
+	end
+end
+
+function set_actor_sound_factor(factor)
+	local theme = sound_theme.actor_theme[actor_sound.theme]
+	if theme ~= nil then
+		actor_sound.min_snd = theme.min_snd * factor
+		actor_sound.max_snd = theme.max_snd * factor
+	end
+end
+
+function update_actor()
+	local theme = sound_theme.actor_theme[actor_sound.theme]
+	if theme == nil then return end
+
+	if #theme.sounds == 0 then
+		return
+	end
+
+	if actor_sound.begin == nil or
+	   time_global() - actor_sound.begin >= actor_sound.idle
+	then
+		actor_sound.begin = time_global()
+
+		--' ��� ���� �������� ����
+		local sound = theme.sounds[math.random(#theme.sounds)]
+		if sound ~= nil then
+			sound:play(db.actor, 0, sound_object.s2d)
+		end
+		-- nv100807 - this sound idle timing is for actor radiation/border geiger clicks
+		actor_sound.idle = math.random(actor_sound.min_snd, actor_sound.max_snd) -- * 1000
+	end
+end
+
+
+
+
+--' ������� ��� �������� ��������� ����� ��������.
+sound_object_by_theme = {}
+--' type = [random|seq|looped]
+function get_sound_object(theme, t_type)
+	if sound_theme.ph_snd_themes[theme] == nil then
+		abort("ph_snd_themes for theme %s", tostring(theme))
+		return
+	end
+
+	if sound_object_by_theme[theme] == nil then
+		sound_object_by_theme[theme] = {}
+	end
+
+	if t_type == nil then
+		t_type = "random"
+	end
+
+	--' ����� ���������� ���������
+	local play_id = -1
+	local table_size = #sound_theme.ph_snd_themes[theme]
+	if sound_object_by_theme[theme].last_id == nil then
+		if t_type == "random" then
+			if table_size >= 2 then
+				play_id = math.random(1, table_size)
+			else
+				play_id = 1
+			end
+		else
+			play_id = 1
+		end
+	else
+		if t_type == "random" then
+			if table_size >= 2 then
+				play_id = math.random(1, table_size - 1)
+				if play_id >= sound_object_by_theme[theme].last_id then play_id = play_id + 1 end
+			else
+				play_id = 1
+			end
+		else
+			if sound_object_by_theme[theme].last_id < table_size then
+				play_id = sound_object_by_theme[theme].last_id + 1
+			else
+				if type == "looped" then
+					play_id = 1
+				end
+			end
+		end
+	end
+
+	-- printf("SOUND_OBJECT: selected id [%s] for theme [%s], type [%s], size [%s]", tostring(play_id), tostring(theme), tostring(type), table_size)
+
+	if play_id == -1 then
+		return
+	end
+	--' ��������� ������ �� � ��� ��������������� ����� ������ ��� ��� ���� �������
+	if sound_object_by_theme[theme][play_id] == nil then
+		if type(sound_theme.ph_snd_themes[theme][play_id]) == "table" then
+			sound_object_by_theme[theme][play_id.."_r"] = get_safe_sound_object(sound_theme.ph_snd_themes[theme][play_id][1].."_r")
+			sound_object_by_theme[theme][play_id.."_l"] = get_safe_sound_object(sound_theme.ph_snd_themes[theme][play_id][1].."_l")
+		else
+			sound_object_by_theme[theme][play_id] = get_safe_sound_object(sound_theme.ph_snd_themes[theme][play_id])
+		end
+	end
+
+	sound_object_by_theme[theme].last_id = play_id
+
+	--' ���������� ����� ������
+	if type(sound_theme.ph_snd_themes[theme][play_id]) == "table" then
+		if closecaption then
+		closecaption.cc_display_sndobj_theme(theme .. "-" .. play_id .. "_t")
+		end
+		return sound_object_by_theme[theme][play_id.."_r"], sound_object_by_theme[theme][play_id.."_l"]
+	else
+		if closecaption then
+		closecaption.cc_display_sndobj_theme(theme .. "-" .. play_id)
+		end
+		return sound_object_by_theme[theme][play_id]
+	end
+end
+
+local sound_object_by_path = {}
+--' ������� ������ �������, ������������ �������� ������.
+function get_safe_sound_object(path)
+	if sound_object_by_path[path] == nil then
+		sound_object_by_path[path] = sound_object(path)
+	end
+	return sound_object_by_path[path]
+end
+
+function stop_all_sound_object()
+	for k,v in pairs(sound_object_by_path) do
+		if v:playing() then
+			v:stop()
+		end
+	end
+end
+function clear_all_sound_object()
+	sound_object_by_theme = {}
+end
+-- dbglog("xr_sound.script is valid")
