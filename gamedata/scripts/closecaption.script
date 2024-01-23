@@ -4,7 +4,7 @@
 -- K�sz�tette: The Sweet Little 16-bit (tsl16b@freemail.hu)
 -----------------------------------------------------------
 -- forgottenspiral
--- v0.1
+-- v0.2
 -----------------------------------------------------------
 
 function cc_display_sndobj_theme(cc_id)
