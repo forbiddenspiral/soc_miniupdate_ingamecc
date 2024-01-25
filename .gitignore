@@ -2,6 +2,7 @@
 .vscode
 Copy-SOC.ps1
 NOTES.md
+Release.ps1
 Run-SOC.ps1
 SOC-MAIN-PROJECT.code-workspace
 Unset-Read-Only.ps1
