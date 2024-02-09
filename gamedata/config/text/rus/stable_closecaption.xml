@@ -1712,6 +1712,27 @@
 
 	<!-- Pripyat -->
 
+	<string id="cc_characters_voice-scenario-pri-heli_phrase1">
+		<text>Placeholder (pri).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-heli_phrase2">
+		<text>Placeholder (pri).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-heli_phrase3">
+		<text>Placeholder (pri).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-heli_phrase4">
+		<text>Placeholder (pri).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-heli_phrase5">
+		<text>Placeholder (pri).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-heli_phrase6">
+		<text>Placeholder (pri).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-pri-heli_phrase7">
+		<text>Placeholder (pri).</text>
+	</string>
 	<string id="pri_followers_final_phrase2-0">
 		<text>Меченый, иди сюда! Поговорить надо.</text>
 	</string>
@@ -1829,26 +1850,179 @@
 
 	<!-- AES -->
 
-	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_1">
-		<text>Выброс, командир. Валим на хер...
-		\n%c[255,240,217,182]Двигайтесь, Земля: выброс... Мы ушли...%c[default]
-		\nДавай, давай, давай. Сваливаем.</text>
+	<string id="cc_characters_voice-scenario-aes-aes_2chopers_attack">
+		<text>Placeholder (aes).</text>
 	</string>
-	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_2">
-		<text>Внимание всем: выброс. Рассредоточиться по укрытиям...
-		\n%c[255,240,217,182]Ни хера себе! Прибор зашкалило, командир...%c[default]
-		\nНоги, ноги!...
-		\n%c[255,240,217,182]Где бы норочку уютную найти?%c[default]</text>
+	<string id="cc_characters_voice-scenario-aes-aes_blockpost_battle">
+		<text>Placeholder (aes).</text>
 	</string>
-	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_3">
-		<text>Ястреб, всем укрыться!
-		\n%c[255,240,217,182]Командир, сваримся на хер. Нормальное укрытие надо...%c[default]
-		\nСапсан, давай наших внутрь...
-		\nЯстреб, понял? Сапсан, слушай меня: всем огонь по входу...
-		\nВсе, почистили. Сапсан-6, прикрывай... Ну, давай. Все, пошли, пошли!</text>
+	<string id="cc_characters_voice-scenario-aes-aes_choper_anomaly">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_choper_crush">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_choper_hunt">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_choper_hunt_1">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_choper_hunt_2">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_choper_patrol">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin_1">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin_2">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin_3">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_gate">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_gate2">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_more">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_more_1">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_more_2">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed2">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed3">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_1">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_2">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_3">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_4">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_first_desant_wave">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_forth_desant_wave">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_monsters">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_monsters_ambush">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_road_battle">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_second_desant_wave">
+		<text>Placeholder (aes).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes_third_desant_wave">
+		<text>Placeholder (aes).</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes2_trader_ask">
 		<text>Меченый? Какого черта?</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_actor_hunt">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_1">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_2">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_3">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_bridge_ambush_1">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_bridge_ambush_2">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_choper_down_1">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_choper_down_2">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_choper_down_3">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_commander_out">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_enter_battle_1">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_2">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_3">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_4">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_5">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_6">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_7">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_8">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_rpg_1">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_rpg_2">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_rpg_3">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_seven_desant_wave">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_six_desant_wave">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_sniper_desant">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_sniper_talk">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_snipers_out">
+		<text>Placeholder (aes2).</text>
+	</string>
+	<string id="cc_characters_voice-scenario-aes-aes2-aes_unknown_weapon">
+		<text>Placeholder (aes2).</text>
 	</string>
 
 	<!-- Sarcofag -->
@@ -1940,6 +2114,4 @@
 	<string id="cc_monsters-poltergeist-die_0">
 		<text>[смерть полтергейста]</text>
 	</string>
-	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin">
-		<text>[военное радио]</text>
-	</string>
+
