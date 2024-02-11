@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------------------------
---	пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (Scheme of voice set)
---	пїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -- Ruslan Didenko (Stohe)
---	update: пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ -- Chugai Alexander (Chugai)
+--	Схема озвучки (Scheme of voice set)
+--	автор:  Диденко Руслан -- Ruslan Didenko (Stohe)
+--	update: Чугай Александр -- Chugai Alexander (Chugai)
 --	update 2: NatVac 2010/08/18
 --		support for rmk_type to fix xr_meet, animation, etc. sounds from overly repeating
 --		sounds now follow the type/min/max/rnd settings in sound_theme.script
@@ -58,7 +58,7 @@ function get_sound(path, tt, npc)
 	local snd_result
 	if path == nil then return nil end
 	if path.exec == nil then
-		-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+		-- чтение настроек темы
 		tt.rmk_type = path.rmk_type
 		if tt.rmk_type == nil then return nil end
 		local npc_id_tbl = path.max_ids[npc:id()]
@@ -82,12 +82,12 @@ function get_sound(path, tt, npc)
 	end
 	return snd_result
 end
--- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- Формирование ключа персонажа
 function get_key(npc)
 	local key
 	local npc_id = npc:id()
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	-- формирование ключа
 	local overrides = xr_logic.generic_scheme_overrides(npc)
 	if overrides and
 		overrides.soundgroup
@@ -97,7 +97,7 @@ function get_key(npc)
 		key = utils.to_str(npc_id)
 	end
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ :) пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!
+	-- апдейт таблиц :) не менять!
 	local keyid = xr_sound.key_by_id[npc_id]
 	if keyid ~= key then
 		if xr_sound.group_idle[keyid] ~= nil	then
@@ -114,7 +114,7 @@ function get_key(npc)
 end
 
 -----------------------------------------------------------------------------------------------------------------------------------
---	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ.
+--	Установка и распарсивание тем в файлы.
 ------------------------------------------------------------------------------------------------------------------------------
 -- assign a sound to an NPC to be played during a later update()
 function set_sound(npc, sound, now, into_timeout)
@@ -133,7 +133,7 @@ function set_sound(npc, sound, now, into_timeout)
 --		else
 --			printf("*SND* change SND [%s] to [%s] for [%s]", tostring(npc_sounds.theme), tostring(sound), npc:name())
 --		end
-		-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅ id
+		-- Туточки надобно распарсить имена тем в их id
 		if sound == nil then sound = "" end
 		-- if npc_sounds == nil then npc_sounds = {} end
 		npc_sounds.theme = sound
@@ -171,7 +171,7 @@ function set_sound(npc, sound, now, into_timeout)
 				end
 			end
 		end
-		-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		-- Устанавливаем входную паузу
 		local key = get_key(npc)
 		local group_table = xr_sound.group_idle[key]
 		if now == true then -- replace any current sound with this new one at next update
@@ -212,8 +212,8 @@ function update(npc)
 	if npc:active_sound_count() ~= 0 then return end
 	local npc_id = npc:id()
 
-	--' пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ.
-	--' пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ idle, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+	--' Если задана тема, то нужно играть ее.
+	--' Если не задана, то нужно играть idle, при условии что у нас нет врагов и денжеров.
 	local npc_sounds = db.sound[npc_id]
 	if npc_sounds ~= nil and npc_sounds.snd == nil then
 		return
@@ -270,7 +270,7 @@ end
 function play_sound(npc, group_table, timeout)
 	local npc_id = npc:id()
 	local npc_sounds = db.sound[npc_id]
-	-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+	-- нужно составить список тем
 	local snd_table = {}
 	local t = 0
 	local snd_result
@@ -298,7 +298,7 @@ function play_sound(npc, group_table, timeout)
 	-- the fix is to use the theme min/max sound delays on the theme and not the group
 	local idle = 1000
 
-	-- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.
+	-- из списка тем выбираем одну.
 	local snd = snd_table[math.random(0, t-1)]
 	if snd == nil or snd.rmk_type == nil then
 		-- dbglog("snd == nil or snd.rmk_type == nil for "..npc:name())
@@ -351,7 +351,7 @@ function play_sound(npc, group_table, timeout)
 	if group_table.last_snd	== nil then
 		group_table.last_snd = {}
 	end
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ into пїЅпїЅпїЅ rnd пїЅпїЅпїЅпїЅпїЅ
+	-- необходимо ли нам играть into или rnd звуки
 	if snd.into_max ~= nil and snd.into_max > 0 then
 		local last_seq = npc_sounds.last_snd[snd.into_id]
 		if last_seq == nil then --not played any yet
@@ -371,7 +371,7 @@ function play_sound(npc, group_table, timeout)
 			end
 		end
 
-		-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		-- играем входные
 		-- if npc_sounds.last_snd[snd.into_id] == nil then npc_sounds.last_snd[snd.into_id] = -1 end
 
 		--printf("*SND* play seq [%s] for [%s]", npc_sounds.last_snd[snd.into_id]+1, npc:name())
@@ -390,7 +390,7 @@ function play_sound(npc, group_table, timeout)
 	-- end
 	-- if snd.rnd_max ~= nil and
 	elseif snd.rnd_max ~= nil and snd.rnd_max > 0 then
-		-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		-- играем рандомные
 		local s = 0
 		local last_rnd = group_table.last_snd[snd.rnd_id]
 		if snd.rmk_type > rmk_once then last_rnd = npc_sounds.last_snd[snd.rnd_id] end
@@ -401,8 +401,8 @@ function play_sound(npc, group_table, timeout)
 			-- end
 		-- else
 		if snd.rnd_max > 1 then
-			-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
-			-- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
+			-- Если прошлый раз проигрывался такой же набор тем
+			-- то учитывать последний звук для группы.
 --				if npc_sounds.last_snd[snd.rnd_id] ~= nil then
 			if last_rnd == nil then
 				s = math.random(0, snd.rnd_max-1)
@@ -457,7 +457,7 @@ local actor_sound = {}
 function set_actor_sound(sound)
 	-- printf("*ACTOR SND* try to change SND to [%s]", tostring(sound))
 	if actor_sound.theme ~= sound then
-		--' пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅ id
+		--' Туточки надобно распарсить имена тем в их id
 		if sound == nil then sound = "" end
 		actor_sound.theme = sound
 		actor_sound.begin = nil
@@ -487,7 +487,7 @@ function update_actor()
 	then
 		actor_sound.begin = time_global()
 
-		--' пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+		--' Тут надо отыграть звук
 		local sound = theme.sounds[math.random(#theme.sounds)]
 		if sound ~= nil then
 			sound:play(db.actor, 0, sound_object.s2d)
@@ -500,7 +500,7 @@ end
 
 
 
---' пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+--' Таблица для хранения созданных саунд обжектов.
 sound_object_by_theme = {}
 --' type = [random|seq|looped]
 function get_sound_object(theme, t_type)
@@ -517,7 +517,7 @@ function get_sound_object(theme, t_type)
 		t_type = "random"
 	end
 
-	--' пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	--' Выбор следующего айдишника
 	local play_id = -1
 	local table_size = #sound_theme.ph_snd_themes[theme]
 	if sound_object_by_theme[theme].last_id == nil then
@@ -554,7 +554,7 @@ function get_sound_object(theme, t_type)
 	if play_id == -1 then
 		return
 	end
-	--' пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	--' Проверяем создан ли у нас соответствующий саунд обжект или его надо создать
 	if sound_object_by_theme[theme][play_id] == nil then
 		if type(sound_theme.ph_snd_themes[theme][play_id]) == "table" then
 			sound_object_by_theme[theme][play_id.."_r"] = get_safe_sound_object(sound_theme.ph_snd_themes[theme][play_id][1].."_r")
@@ -566,7 +566,7 @@ function get_sound_object(theme, t_type)
 
 	sound_object_by_theme[theme].last_id = play_id
 
-	--' пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	--' Возвращаем саунд обжект
 	if type(sound_theme.ph_snd_themes[theme][play_id]) == "table" then
 		if closecaption then
 		closecaption.cc_display_sndobj_theme(theme .. "-" .. play_id .. "_t")
@@ -581,7 +581,7 @@ function get_sound_object(theme, t_type)
 end
 
 local sound_object_by_path = {}
---' пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
+--' Обертка вокруг функции, возвращающий звуковой объект.
 function get_safe_sound_object(path)
 	if sound_object_by_path[path] == nil then
 		sound_object_by_path[path] = sound_object(path)

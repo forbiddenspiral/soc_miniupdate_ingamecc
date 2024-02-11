@@ -158,14 +158,14 @@ function send_tip(actor, news_id, timeout, sender, showtime, sender_id)
 			local npc = sim:story_object(sender_id)
 			if npc ~= nil then
 				if npc.online then
-					--пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					--в онлайне проверяем на раненность
 					if xr_wounded.is_heavy_wounded_by_id(npc.id) then
 						-- printf("[PDA]Cannot send tips [%s], sender is heavy wounded", tostring(news_id))
 						-- nv 080515 allow val_sos_wounded message
 						if sender_id ~= 422 then return false end
 					end
 				end
-				-- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				-- в других случаях только на смерть
 				if npc:alive() == 1 then
 					-- printf("[PDA]Cannot send tips [%s], sender is dead", tostring(news_id))
 					return false
@@ -177,13 +177,13 @@ function send_tip(actor, news_id, timeout, sender, showtime, sender_id)
 	if timeout == nil then timeout = 0 end
 	if showtime == nil then showtime = news_display_time end
 
-	--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	--' Играем дефолтный звук
 	pda_tips:play(db.actor, timeout, sound_object.s2d)
 	if news[news_id] ~= nil then
-		--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		--' Играем звук забитый
 		news[news_id]:play(db.actor, timeout+1, sound_object.s2d)
 
-		--' пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		--' Необходимо поставить время показа по длине сцены
 		local length = news[news_id]:length()
 		if length > showtime then
 			showtime = length
@@ -211,7 +211,7 @@ function send_tip_nosound(actor, news_id, timeout, sender)
 
 	timeout = 0
 
-	--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	--' Играем дефолтный звук
 	pda_tips:play(db.actor, timeout, sound_object.s2d)
 	local news_sound = news[news_id]
 
@@ -227,10 +227,10 @@ local action_descr_by_type = {
 function send_task(actor, type, task, objective)
 	if db.actor == nil then return false end
 
-	--' пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	--' Берем координаты из текстуры таска
     local task_texture, task_rect = get_texture_info("ui_iconsTotal_"..task:get_id(), "ui_iconsTotal_locations")
 
-	--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	--' Играем дефолтный звук
 	pda_task:play(db.actor, 0, sound_object.s2d)
 
 	local news_text
@@ -271,7 +271,7 @@ function send_task(actor, type, task, objective)
 	if type == "new" or
 		type == "update"
 	then
-		--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		--' Выдать новое подзадание
 		if task:get_objectives_cnt() == objective_index then
 			return
 		end
@@ -292,7 +292,7 @@ function send_encyclopedy(type, title)
 		pda_news:play(db.actor, 0, sound_object.s2d)
 
 
-		--' пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		--' Берем координаты из текстуры таска
 		local task_texture, task_rect = get_texture_info("ui_iconsTotal_locations", "ui_iconsTotal_locations")
 		local news_text = "%c[255,160,160,160]"..game.translate_string("st_found_new_pda").."\\n".."%c[default]"..game.translate_string(title)
 		if db.actor:is_talking() then
@@ -320,7 +320,7 @@ end
 
 function relocate_item(actor, type, item)
 	if db.actor == nil then return false end
-	--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	--' Играем дефолтный звук
 	if type == "in" then
 		local task_texture, task_rect = get_texture_info("ui_iconsTotal_found_thing")
 		local news_text = "%c[255,160,160,160]"..game.translate_string("general_in_item").."\\n".."%c[default]"..game.translate_string(get_inv_name(item))
@@ -344,7 +344,7 @@ function relocate_money(actor, type, amount)
 	if db.actor == nil then return false end
 
 
-	--' пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	--' Играем дефолтный звук
 	if type == "in" then
 		local task_texture, task_rect = get_texture_info("ui_iconsTotal_found_money")
 		local news_text = "%c[255,160,160,160]"..game.translate_string("general_in_money").."\\n".."%c[default]"..game.translate_string(tostring(amount))

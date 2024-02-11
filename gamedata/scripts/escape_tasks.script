@@ -42,7 +42,7 @@ function proceed()
 	end
 
 
---' пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+--' Туториальный труп
 	if not has_alife_info("escape_blockpost_case_have") and
 		has_alife_info("escape_blockpost_case") and
 		actor:object("quest_case_01") ~= nil
@@ -139,7 +139,7 @@ function process_info_portion(info_id)
 	-- if info_id:byte(1) ~= 101 or not string.find(info_id, "esc_", 1, true) then return false end
 	-- if string.find(info_id, "esc_", 1, true) ~= 1 then return false end -- nv140420 now done in level_tasks.script
 
-	--' пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+	--' пометки на карте
 
 	if info_id == "esc_tutorial_secret_place" then
 		level_tasks.add_location(025, "crlc_small", "tutorial_secret_place1", 1)

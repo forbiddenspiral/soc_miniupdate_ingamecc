@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------------------------
---	пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
---	пїЅпїЅпїЅпїЅпїЅ:  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  (Stohe)
---	update: пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (Chugai)
+--	Схема озвучки
+--	автор:  Диденко Руслан  (Stohe)
+--	update: Чугай Александр (Chugai)
 -- nv 100808 removed rnd and prior (only rnd was used by xr_sounds.script, itself not used)
 -- nv 100808 removed some unused references, added rmk_type to sound tables
 -- nv 121025 minor tweaks to Yurik robbery, enemy, idle camp chatter
@@ -128,7 +128,7 @@ ph_snd_themes["radar_thunder"] = {"ambient\\radar_2"}
 ph_snd_themes["radar_sparks"] = {"ambient\\radarsparks_1"}
 ph_snd_themes["aes_teleport"] = {"anomaly\\teleport_incoming"}
 
-ph_snd_themes["yan_antenna"] = {{"characters_voice\\scenario\\yantar\\psy_voices_1"}} --' пїЅпїЅпїЅпїЅпїЅпїЅ
+ph_snd_themes["yan_antenna"] = {{"characters_voice\\scenario\\yantar\\psy_voices_1"}} --' Стерео
 
 ph_snd_themes["radar_meh_on"] = {"ambient\\cooling_run"}
 ph_snd_themes["radar_meh_off"] = {"ambient\\cooling_stop"}
@@ -198,7 +198,7 @@ ph_snd_themes["x16_switch_2"] = {"ambient\\x16\\switch_2"}
 ph_snd_themes["x18_firedoor"] = {"anomaly\\fireball_idle"}
 ph_snd_themes["mon_poltergeist"] = {"anomaly\\anomaly_gravy_hit1"}
 
-ph_snd_themes["psy_voices"] = {{[[characters_voice\scenario\yantar\psy_voices_1]]}} --' пїЅпїЅпїЅпїЅпїЅпїЅ
+ph_snd_themes["psy_voices"] = {{[[characters_voice\scenario\yantar\psy_voices_1]]}} --' Стерео
 
 ph_snd_themes["heli_explosion"] = {[[weapons\heli_explosion]]}
 
@@ -245,7 +245,7 @@ function combat_class(avail_types, npc)
 end
 
 -------------------------------------------------------------------------
--- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- ЗВУКИ СТАЛКЕРОВ
 -------------------------------------------------------------------------
 local sounds_base = stalker_ids.sound_script + 10000
 
@@ -258,18 +258,18 @@ end
 -- if you add/remove any, make sure the rnd_id/into_id support is kept in sync.  (Some have both types.)
 
 theme = {
-	-- пїЅпїЅпїЅпїЅпїЅпїЅ
+	-- погода
 	weather = {	exec = sound_theme.weather_class,
 				types = {weather_bad	= {rmk_type = rmk_sporadic, min_snd=25, max_snd=60, rnd_id = id(), max_ids = {}},
 						 weather_good	= {rmk_type = rmk_sporadic, min_snd=25, max_snd=60, rnd_id = id(), max_ids = {}} }},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	-- состояния тела
 	state = {	exec = sound_theme.combat_class,
 				types = {state	= {rmk_type = rmk_sporadic, min_snd=25, max_snd=60, rnd_id=id(), max_ids={}, rnd = 75}} },
 
 	sleep				= {rmk_type = rmk_sporadic, min_snd = 10, max_snd = 15, rnd_id = id(), max_ids = {}, rnd = 75},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	-- просьба о помощи
 	help				= {rmk_type = rmk_muse, rnd_id = id(), into_id = id(), max_ids = {}},
 	help_see			= {rmk_type = rmk_sporadic, min_snd = 5, max_snd = 10, rnd_id = id(), into_id = id(), max_ids = {}},
 	-- help_see_tutor		= {rmk_type = rmk_chatter, rnd_id = id(), max_ids = {}},
@@ -278,10 +278,10 @@ theme = {
 	wounded_psy			= {rmk_type = rmk_muse, rnd_id = id(), into_id = id(), max_ids = {}},
 	wounded_psy_shoot	= {rmk_type = rmk_muse, into_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅ
+	-- окрик
 	hail				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- ожидание
 	wait				= {rmk_type = rmk_chatter, into_id = id(), max_ids = {}},
 
 	-- speech
@@ -289,12 +289,12 @@ theme = {
 	-- only used for krot (Mole) -- cheesy duplicate of Shaggy whine
     speech1				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅ
+	-- угрозы
 	threat_weap			= {rmk_type = rmk_muse, into_id = id(), max_ids = {}},
 	threat_back			= {rmk_type = rmk_muse, into_id = id(), max_ids = {}},
 	threat_stop			= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- реакции
 --	reac_hear				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	reac_see				= {rmk_type = rmk_react, rnd_id = id(), max_ids = {}},
 --	reac_crps_monstr		= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
@@ -307,7 +307,7 @@ theme = {
 	reac_music				= {rmk_type = rmk_react, rnd_id = id(), max_ids = {}},
 	reac_joke				= {rmk_type = rmk_react, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- болтовня
 	talk_hello				= {rmk_type = rmk_chatter, rnd_id = id(), max_ids = {}},
 	talk_hello_friend		= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	talk_bye				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
@@ -315,7 +315,7 @@ theme = {
 	talk_reject				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	talk_abuse				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	-- реакции на юзание
 	use_yes_fight			= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	use_yes_sleep			= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	use_yes_kamp			= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
@@ -326,7 +326,7 @@ theme = {
 	use_no_default			= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	use_abuse				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅ
+	-- бой
 	-- fight_attack			= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	fight_attack			= {rmk_type = rmk_once, rnd_id = id(), max_ids = {}},
 	zombied_fight_attack	= {rmk_type = rmk_sporadic, min_snd = 5, max_snd = 10, rnd_id = id(), max_ids = {}},
@@ -334,22 +334,22 @@ theme = {
 	-- fight_enemy				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	fight_enemy				= {rmk_type = rmk_sporadic, min_snd = 5, max_snd = 20, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- торговля
 	trade_yes				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 	trade_no				= {rmk_type = rmk_muse, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- игра на губной гармошке
 	intro_music				= {rmk_type = rmk_once, rnd_id = id(), max_ids = {}},
 	harmonica				= {rmk_type = rmk_react, rnd_id = id(), max_ids = {}}, -- normally 3 to 5
 
-	-- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	-- игра на гитаре
 	guitar					= {rmk_type = rmk_react, rnd_id = id(), max_ids = {}}, -- normally 3 to 5
 
-	-- пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- шутки, прибаутки
 	intro_joke				= {rmk_type = rmk_once, rnd_id = id(), max_ids = {}},
 	joke					= {rmk_type = rmk_once, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	-- Истории
 	story_01				= {rmk_type = rmk_once, into_id = id(), max_ids = {},
 					depence	= {	[2] = {theme = "story_reac_cool_info", min = 1, max = 1},
 								[3] = {theme = "story_reac_continue", min = 2, max = 3},
@@ -425,7 +425,7 @@ theme = {
 	story_reac_wonder			= {rmk_type = rmk_chatter, rnd_id = id(), max_ids = {}},
 	story_reac_yes				= {rmk_type = rmk_chatter, rnd_id = id(), max_ids = {}},
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	-- УНИКАЛЬНЫЕ ТЕМЫ
 	-- Escape
 	esc_tolik_help				= {rmk_type = rmk_sporadic, min_snd = 7, max_snd = 10, rnd_id = id(), max_ids = {}},
 	-- esc_guard_camp				= {rmk_type = rmk_sporadic, min_snd = 7, max_snd = 10, rnd_id = id(), max_ids = {}},
@@ -688,7 +688,7 @@ theme = {
     mil_cherep_hi                  = {rmk_type = rmk_greet, min_snd = 15, max_snd = 30, into_id = id(), max_ids = {}}
 }
 
---' пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!
+--' В темах для игрока интервал задается в миллисекундах!!!
 actor_theme = {
 	level_border_detector = {min_snd = 10, max_snd = 100,
 							 sounds = {xr_sound.get_safe_sound_object([[detectors\geiger_1]]),
@@ -703,25 +703,25 @@ actor_theme = {
 }
 
 function select_sound_from_ltx(obj, section, ltx)
---	1. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ story_id
+--	1. проверка по story_id
 	local c = obj:story_id()
 	if ltx:line_exist(section, utils.to_str(c)) then
 		return ltx:r_string(section, utils.to_str(c))
 	end
 
---	2. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ npc_profile
+--	2. проверка по npc_profile
 	c = obj:profile_name()
 	if ltx:line_exist(section, c) then
 		return ltx:r_string(section, c)
 	end
 
---	3. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ character_community
+--	3. проверка по character_community
 	c = obj:character_community()
 	if ltx:line_exist(section, c) then
 		return ltx:r_string(section, c)
 	end
 
---	4. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ --match "stalker" even if not char_community
+--	4. загрузка дефолта --match "stalker" even if not char_community
 	if ltx:line_exist(section, "stalker") then
 		return ltx:r_string(section, "stalker")
 	else
@@ -740,7 +740,7 @@ end
 function load_sound(obj)
 	-- local k,v = 0,0
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ltx
+	-- загрузка звуков на основе данных ltx
 	function load_sound_from_ltx(obj, name, tbl)
 		tbl.max_ids[obj:id()] = {}
 		if tbl.rnd_id and snd_ini:section_exist(name.."_rnd") then
@@ -814,7 +814,7 @@ function load_sound(obj)
 
 	load_theme_sound(obj, theme)
 
-	-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ db.sound
+	-- делаем заготовку в db.sound
 	db.sound[obj:id()] = {}
 
 ----	printf("All sounds loaded for %s, section %s", obj:name(), obj:section())
