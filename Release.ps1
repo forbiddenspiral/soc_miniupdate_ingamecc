@@ -24,7 +24,7 @@ Write-Host "Starting..." -ForegroundColor Green
 Write-Host "====================" -ForegroundColor Green
 
 # Specify the folder where all the final files will be stored.
-$final_folder = "Mini-update_$patch_version-for_InGameCC_ZRP_v1.07_R5RC"
+$final_folder = "Mini-update_$patch_version-for_InGameCC_for_ZRP_v1.07_R5RC"
 
 # Create the folder for the files if it doesn't already exist.
 If (Test-Path -Path "$final_folder") {
