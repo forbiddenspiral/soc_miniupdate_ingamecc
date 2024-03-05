@@ -420,7 +420,7 @@ tips_icons = {
 		stalker	= { 0, 658},		transp	= { 0, 940},
 		dolg	= { 0, 658},		freedom	= { 0, 658},
 		barman	= { 332, 235},		soldier	= { 415, 564},
-		ecolog	= { 498, 0},		saharov	= { 332, 470},
+		ecolog	= { 498, 799},		saharov	= { 332, 470},
 		max	= { 415, 282},		ara	= { 415, 423},
 		arena	= { 332, 141},		volkodav = { 332, 517},
 		robber = {498, 141},		killer_1 = { 498, 235},
