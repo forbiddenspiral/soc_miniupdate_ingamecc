@@ -423,11 +423,13 @@ tips_icons = {
 		ecolog	= { 498, 0},		saharov	= { 332, 470},
 		max	= { 415, 282},		ara	= { 415, 423},
 		arena	= { 332, 141},		volkodav = { 332, 517},
-		robber = {498, 141},		killer_1 = { 498, 188},
-		killer_2 = { 498, 235}, skull = { 498, 282},
-		monolithian = { 498, 329}, expert = { 498, 376},
-		captain = { 498, 423}, military_1 = { 498, 470},
-		military_2 = { 498, 517}
+		robber = {498, 141},		killer_1 = { 498, 235},
+		killer_2 = { 498, 188},		skull = { 498, 282},
+		monolithian = { 498, 329},		expert = { 498, 376},
+		captain = { 498, 423},		army = { 498, 470},
+		pilot_1 = { 498, 517},		pilot_2 = { 498, 564},
+		spetsnaz_1 = { 498, 611},		spetsnaz_2 = { 498, 658},
+		spetsnaz_3 = { 498, 705},
 --		o_soznanie = { 498, 893},
 }
 
