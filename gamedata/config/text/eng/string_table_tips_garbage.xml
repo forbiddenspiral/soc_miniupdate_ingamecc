@@ -35,8 +35,9 @@
 		<text>Bandits have gone mad, is there anyone nearby, damn it?! We're dead meat!</text>
 	</string>
 	<string id="tips_gar_seryi_victory">
-		<text>Thanks brother for fighting them off. Come over here, we finally can have a chat.</text>
+		<text>Man, that was close! Glad you're here. Sit down for a minute, let's catch our breath and
+		I'll tell you what's going on.</text>
 	</string>
 	<string id="gar_sos_pda">
-		<text>Help, I'm wounded.</text>
+		<text>Help! I'm wounded!</text>
 	</string>
