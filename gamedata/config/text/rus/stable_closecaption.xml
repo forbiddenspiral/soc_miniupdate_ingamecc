@@ -596,7 +596,9 @@
 		<text>[замок открыт]</text>
 	</string>
 	<string id="cc_characters_voice-scenario-escape-heli_radio_part_1">
-		<text>[военное радио]</text>
+		<text>Командир, какой-то идиот бродит внизу, должны мы его поджечь?
+		\n%c[255,240,217,182]Отрицательно. Нет смысла тратить боеприпасы на такие мелочи.
+		\n%c[default]Хе-хе, понял. Он пока что живет.</text>
 	</string>
 
 	<!-- Garbage -->
@@ -1397,7 +1399,7 @@
 		<text>Да-да?</text>
 	</string>
 	<string id="yantar_professor_talk_2-0">
-		<text>Just a second... I'm coming.</text>
+		<text>Секунду... Я иду.</text>
 	</string>
 	<string id="yantar_professor_to_kruglov_1-0">
 		<text>Ну кроме тебя некому пойти, пойми это! Сейчас очень важно сделать калибровку.</text>
@@ -1693,9 +1695,9 @@
 		<text>Внимание! Защита отключена!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-bun-patrol_prikaz">
-		<text>Нестандартная ситуация. Обеспечьте безопасность немедленно.
+		<text>Нештатная ситуация. Обеспечьте безопасность немедленно.
 		\nПервый этаж, второй этаж, главный зал.
-		\nУничтожьте нарушителей. Подавить вторжение.</text>
+		\nЛиквидировать нарушителей. Подавить проникновение.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-radar-rad_soldier_des_1">
 		<text>База, это 056. Отсутствие излучения подтверждено. Крупных скоплений противника не обнаружено. Вепря... высадил в районе антенн для разведки. Жду дальнейших указаний.
@@ -2114,4 +2116,3 @@
 	<string id="cc_monsters-poltergeist-die_0">
 		<text>[смерть полтергейста]</text>
 	</string>
-
