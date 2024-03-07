@@ -920,6 +920,7 @@ snd_paths = {
 		["characters_voice\\scenario\\pri\\followers_wave4_end_phrase"]		= {-1, "expert", 3},
 		["characters_voice\\scenario\\pri\\followers_wave4_start_phrase"]	= {-1, "expert", 3},
 		["characters_voice\\scenario\\pri\\followers_wave6_end_phrase"]		= {-1, "expert", 4},
+		--[[ 		
 		["characters_voice\\scenario\\aes\\aes_2chopers_attack"]		= {-1, "captain", 11},
 		["characters_voice\\scenario\\aes\\aes_blockpost_battle"]		= {-1, "captain", 10},
 		["characters_voice\\scenario\\aes\\aes_choper_anomaly"]		= {-1, "captain", 10},
@@ -976,7 +977,8 @@ snd_paths = {
 		["characters_voice\\scenario\\aes\\aes2\\aes_sniper_desant"]		= {-1, "captain", 32},
 		["characters_voice\\scenario\\aes\\aes2\\aes_sniper_talk"]		= {-1, "captain", 14},
 		["characters_voice\\scenario\\aes\\aes2\\aes_snipers_out"]		= {-1, "captain", 8},
-		["characters_voice\\scenario\\aes\\aes2\\aes_unknown_weapon"]		= {-1, "captain", 16},		
+		["characters_voice\\scenario\\aes\\aes2\\aes_unknown_weapon"]		= {-1, "captain", 16},
+		]]	
 		["characters_voice\\scenario\\sarcofag\\monolith_call_1"]		= {5, "monolith", 9},
 		["characters_voice\\scenario\\sarcofag\\monolith_call_2"]		= {5, "monolith", 9},
 		["characters_voice\\scenario\\sarcofag\\monolith_call_3"]		= {5, "monolith", 8},

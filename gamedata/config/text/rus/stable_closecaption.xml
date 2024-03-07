@@ -1852,7 +1852,7 @@
 	</string>
 
 	<!-- AES -->
-
+	<!-- 
 	<string id="cc_characters_voice-scenario-aes-aes_2chopers_attack">
 		<text>Placeholder (aes).</text>
 	</string>
@@ -1943,9 +1943,11 @@
 	<string id="cc_characters_voice-scenario-aes-aes_third_desant_wave">
 		<text>Placeholder (aes).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes2_trader_ask">
 		<text>Меченый? Какого черта?</text>
 	</string>
+	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_actor_hunt">
 		<text>Placeholder (aes2).</text>
 	</string>
@@ -2027,7 +2029,7 @@
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_unknown_weapon">
 		<text>Placeholder (aes2).</text>
 	</string>
-
+	-->
 	<!-- Sarcofag -->
 
 	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_1">
