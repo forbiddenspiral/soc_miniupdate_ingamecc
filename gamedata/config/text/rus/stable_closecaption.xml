@@ -1713,7 +1713,7 @@
 	</string>
 
 	<!-- Pripyat -->
-
+	<!-- 
 	<string id="cc_characters_voice-scenario-pri-heli_phrase1">
 		<text>Placeholder (pri).</text>
 	</string>
@@ -1735,6 +1735,7 @@
 	<string id="cc_characters_voice-scenario-pri-heli_phrase7">
 		<text>Placeholder (pri).</text>
 	</string>
+	-->
 	<string id="pri_followers_final_phrase2-0">
 		<text>Меченый, иди сюда! Поговорить надо.</text>
 	</string>
