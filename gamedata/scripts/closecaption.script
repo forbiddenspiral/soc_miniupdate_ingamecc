@@ -429,7 +429,7 @@ tips_icons = {
 		captain = { 498, 423},		army = { 498, 470},
 		pilot_1 = { 498, 517},		pilot_2 = { 498, 564},
 		spetsnaz_1 = { 498, 611},		spetsnaz_2 = { 498, 658},
-		spetsnaz_3 = { 498, 705},
+		spetsnaz_3 = { 498, 705},		base = { 498, 846},
 --		o_soznanie = { 498, 893},
 }
 
