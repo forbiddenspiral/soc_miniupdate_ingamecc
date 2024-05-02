@@ -1087,7 +1087,7 @@
 		<text>Come in, come in!</text>
 	</string>
 	<string id="bar_start_megafon-1">	<!-- copy of "dolg_speech-1" -->
-		<text>Attention stalkers! We need volunteers for dangerous but well payed missions. Come to the bar if you're interested.</text>
+		<text>Attention stalkers! We need volunteers for dangerous but well paid missions. Come to the bar if you're interested.</text>
 	</string>
 	<string id="bar_start_megafon-2">	<!-- copy of "dolg_speech-2" -->
 		<text>Stalkers! If you're looking for a place to rest, eat, drink, talk or finding some work, the 100 Rads bar is the place for you. We're always happy to serve new customers.</text>
@@ -1111,7 +1111,7 @@
 		<text>Attention! A murderer is present! To everyone on Duty territory: kill the murderer immediately!</text>
 	</string>
 	<string id="dolg_speech-1">
-		<text>Attention stalkers! We need volunteers for dangerous but well payed missions. Come to the bar if you're interested.</text>
+		<text>Attention stalkers! We need volunteers for dangerous but well paid missions. Come to the bar if you're interested.</text>
 	</string>
 	<string id="dolg_speech-2">
 		<text>Stalkers! If you're looking for a place to rest, eat, drink, talk or finding some work, the 100 Rads bar is the place for you. We're always happy to serve new customers.</text>
