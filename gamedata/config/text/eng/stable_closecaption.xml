@@ -1851,156 +1851,239 @@
 	</string>
 
 	<!-- AES -->
-	<!-- 
 	<string id="cc_characters_voice-scenario-aes-aes_2chopers_attack">
-		<text>Placeholder (aes).</text>
+		<text>052, twenty to the right, then one-fifty, transformer shed - asshole with a launcher, silence him.
+		\nCopy, see him... Eat this!</text>
 	</string>
+	<!-- 
 	<string id="cc_characters_voice-scenario-aes-aes_blockpost_battle">
 		<text>Placeholder (aes).</text>
 	</string>
+	-->
 	<string id="cc_characters_voice-scenario-aes-aes_choper_anomaly">
-		<text>Placeholder (aes).</text>
+		<text>064, I'm above the spot, wor... Ah-ah-ah!
+		\nQuartet, 065 exploded upon landing. No sign of survivors.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_choper_crush">
-		<text>Placeholder (aes).</text>
+		<text>031, asshole with a launcher on the roof!
+		\nOh, shit! Chief, left engine!
+		\nHold it, hold it! Pull, come on! Fuck, that's i...</text>
 	</string>
+	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes_choper_hunt">
 		<text>Placeholder (aes).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes_choper_hunt_1">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, two-three hundred to the left, near a moat, got enemy movement.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_choper_hunt_2">
-		<text>Placeholder (aes).</text>
+		<text>Shit! Chief, oil leak from the reduction gear!
+		\nCopy, got control on the bird!
+		\nIvan, some help!
+		\n064, eject!
+		\nNo good!</text>
 	</string>
+	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes_choper_patrol">
 		<text>Placeholder (aes).</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin">
 		<text>Placeholder (aes).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin_1">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, this is 030. Approaching target.
+		\n030, you got 2 electronic recon vehicles disabled down there, check them.\nQuartet, 030, roger.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin_2">
-		<text>Placeholder (aes).</text>
+		<text>052, 051. Approaching target.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_chopers_begin_3">
-		<text>Placeholder (aes).</text>
+		<text>064, we got movement down here. 052, make a pass, let's blast them.
+		\nEasy, let's do it.
+		\n051, looks clear, working.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_gate">
-		<text>Placeholder (aes).</text>
+		<text>Sapsan 05, watch the gates!
+		\nSapsan Actual, don't see them!
+		\nSending tracers!
+		\nSee them!
+		\nQuartet, Korshun in position, area clear. Got 2 "300".
+		\nKorshun, take positions. Await arrival of Yastreb and Sapsan.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_gate2">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Sapsan. Approaching target. Got eyes on Korshun and Yastreb. We got 1 "200" and 2 "300".
+		\nSapsan, hold the objective. Yastreb, Korshun - continue movement.</text>
 	</string>
+	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes_desant_more">
 		<text>Placeholder (aes).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes_desant_more_1">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Sokol on the ground. Proceeding.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_more_2">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Kanyuk on the ground. See the enemy, engaging.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed2">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Yastreb. Quiet so far. Proceeding.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed3">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Korshun in position. Proceeding.
+		\n051, cover Korshun. Status on ammo and fuel?
+		\nQuartet, 051. Ammo/fuel - 2/3. Roger on Korshun, en route.
+		\nTo all Korshuns! Fire at the entrance!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_1">
-		<text>Placeholder (aes).</text>
+		<text>Air, this is Ground. Sixty to the left, then two hundred. Got enemy, marking ourselves with a flare, wipe their asses.
+		\nRead you, Ground. Mark it.
+		\nGround, I see you. See the hostiles, wait for splash.
+		\nAir, a little closer.
+		\nRog.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_2">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, proceeding with the task. At position in 2 minutes.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_3">
-		<text>Placeholder (aes).</text>
+		<text>Sapsan 05, son of a... go there! Sapsan 04, shoot the mutants!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_desant_proceed_part_4">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Yastreb in position, got eyes on Korshun. No casualties.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_first_desant_wave">
-		<text>Placeholder (aes).</text>
+		<text>052, looks clear. Go to work.
+		\nAwesome, working.
+		\n051, in position, troops are on the ground.
+		\nQuartet, this is Korshun. On the ground, working.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_forth_desant_wave">
-		<text>Placeholder (aes).</text>
+		<text>018 finished work.
+		\nSergiy, danger right! Lower, lower! Over there!
+		\nQuartet, Pustelga! On the ground, engaging!
+		\nQuartet, heavy rotor damage! RTB!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_monsters">
-		<text>Placeholder (aes).</text>
+		<text>Holy shit! Pustelga! There's a swarm of mutants... here!</text>
 	</string>
+	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes_monsters_ambush">
 		<text>Placeholder (aes).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes_road_battle">
-		<text>Placeholder (aes).</text>
+		<text>Sokol 03, sector to the right! Quartet, we're engaging! Equipment is registering a blowout!
+		\nAll stations, get ready! Blowout is approaching! I repeat! Blowout is approaching!
+		\n048, 049, let's gtfo.
+		\n049, are you deaf or just stupid?!
+		\nWait one! Got shit down here...</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_second_desant_wave">
-		<text>Placeholder (aes).</text>
+		<text>051, work completed.
+		\n052, copy that. Cover me, working.
+		\nQuartet, this is Sapsan. On the ground</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes_third_desant_wave">
-		<text>Placeholder (aes).</text>
+		<text>Quartet, Yastreb on the ground.</text>
 	</string>
-	-->
 	<string id="cc_characters_voice-scenario-aes-aes2-aes2_trader_ask">
 		<text>Marked One?! What the hell...?!</text>
 	</string>
-	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_actor_hunt">
-		<text>Placeholder (aes2).</text>
+		<text>Air! There's some armored asshole running around near the transformer!
+		\nRoger, Ground. 051, see him? Work him.
+		\n052, working.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_1">
-		<text>Placeholder (aes2).</text>
+		<text>Blowout, command. Let's gtfo.
+		\nGround, find cover! We're out.
+		\nCome on, come on. Get out.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_2">
-		<text>Placeholder (aes2).</text>
+		<text>To all stations! Blowout! Spread out into covers!
+		\nHoly shit! Chief, the readings are off the scales!
+		\nMove, move!
+		\nIf only there was a nice hole to cover in...</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_blowout_3">
-		<text>Placeholder (aes2).</text>
+		<text>All Yastrebs, find cover!
+		\nCommand! We'll get fried out here! We need proper cover!
+		\nSapsan! Let's get the boys inside!
+		\nCopy that, Yastreb!
+		\nSapsan, listen up! Concentrate fire on the plant entrance!
+		\nAlright, looks clear! Sapsan 06, cover us! That's it, come one! Let's move, let's move!</text>
 	</string>
+	<!-- 	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_bridge_ambush_1">
 		<text>Placeholder (aes2).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_bridge_ambush_2">
-		<text>Placeholder (aes2).</text>
+		<text>All Grifs, take 360 security. Quartet, Grif. Got into an ambush on the bridge, taking fire. Got 1 "200", 1 "300", need help!
+		\nGround, we hear you, coming over.</text>
 	</string>
+	<!--	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_choper_down_1">
 		<text>Placeholder (aes2).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_choper_down_2">
-		<text>Placeholder (aes2).</text>
+		<text>Kolya is down!
+		\nQuartet, 098. Got eyes on crashed 097. Fuck...</text>
 	</string>
+	<!--	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_choper_down_3">
 		<text>Placeholder (aes2).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_commander_out">
-		<text>Placeholder (aes2).</text>
+		<text>Grif, establish defense! Wait until the mechanized forc...
+		\nQuartet, Grif, repeat last! Quartet, do not copy!
+		\nQuartet! This is Kanyuk. Confirm last!
+		\nQuartet, Grif, do not copy! Quartet! Repeat last!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_enter_battle_1">
-		<text>Placeholder (aes2).</text>
+		<text>Alex, stay outta here, you'll get downed!
+		\nDon't worry, Ground, all's gonna be alri...
+		\nQuartet, 098 is down, fuck...
+		\nQuartet, Grif! Need a pair of "24s".</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_2">
-		<text>Placeholder (aes2).</text>
+		<text>Sapsan 05, behind the carts on the rails.
+		\nSapsan Actual, don't see them.
+		\nTracing.
+		\nSee them!
+		\nMinus one!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_3">
-		<text>Placeholder (aes2).</text>
+		<text>Air, behind a bulldozer, on the road, wipe 'em!
+		\nCopy that, Ground, will do.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_4">
-		<text>Placeholder (aes2).</text>
+		<text>Yastreb 03, Yastreb 06! Hey, go to the right, through that wall opening!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_5">
-		<text>Placeholder (aes2).</text>
+		<text>All Pustelga stations, fire from the roof! Get down! Korshun, keep your head down! Air, marking with flare! On the roof, straight two hundred, fifteen to the right, near pipeline, sniper!
+		\nRoger, Ground.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_6">
-		<text>Placeholder (aes2).</text>
+		<text>Quartet, Yastreb. A lot of broken vehicles on the road, enemy behind them. No idea on the count. Better clean that up.
+		\nGround, I'm above you, mark yourselves.
+		\nYastreb here, look for tracers.
+		\nGround, see you. Engaging. "Gloom" in your cover for now.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_7">
-		<text>Placeholder (aes2).</text>
+		<text>Sokol 05, shit! Don't waste the ammo, not on training!
+		\nChief, 3 behind the pipes!
+		\n All Sokol stations! Assholes behind the pipes, to the left!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_road_battle_8">
-		<text>Placeholder (aes2).</text>
+		<text>Quartet, Kanyuk. Quiet here for now, proceeding.
+		\nAttention all Kanyuk stations! Grenadier, on the right! Spread out!
+		\nKanyuk 05, watch the roof corner!</text>
 	</string>
+	<!--	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_rpg_1">
 		<text>Placeholder (aes2).</text>
 	</string>
@@ -2010,25 +2093,37 @@
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_rpg_3">
 		<text>Placeholder (aes2).</text>
 	</string>
+	-->	
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_seven_desant_wave">
-		<text>Placeholder (aes2).</text>
+		<text>Quartet, 098, engaging.
+		\nQuartet, Grif. In position, proceeding.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_six_desant_wave">
-		<text>Placeholder (aes2).</text>
+		<text>Quartet, Lun on the ground. Moving to objective. Command, one fifty to the left, got someone behind rebar. Can't identify.
+		\nSokol, this is Lun, identify yourselves. All Lun stations! Enemy squad on the left, behind rebar. Lun 05, Lun 02 - cover us!
+		\nGround, I hear ya, coming to help.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_sniper_desant">
-		<text>Placeholder (aes2).</text>
+		<text>Quartet, 097, we're above the target. Looks clear, but there's little space, can't land. We'll go for fast-rope.
+		\n097, copy. Go ahead.
+		\nQuartet, 097. We're done. RTB.
+		\nQuartet, Sova. All accounted for, taking position.
+		\nCopy that, Sova. Be careful with friendly fire.
+		\nRoger, Quartet. No problem.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_sniper_talk">
-		<text>Placeholder (aes2).</text>
+		<text>I don't envy the other one, but this will change. Anyway, you will be mine, and you won't go anywhere...
+		\nSova 03, don't clutter the comms!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_snipers_out">
-		<text>Placeholder (aes2).</text>
+		<text>Air, sending tracers! Looks like assholes with optics!
+		\nGround, copy that. Wait for splash...</text>
 	</string>
 	<string id="cc_characters_voice-scenario-aes-aes2-aes_unknown_weapon">
-		<text>Placeholder (aes2).</text>
+		<text>Quartet, Yastreb. Enemy is using unidentified weaponry. I got 2 "200" and 1 "300".
+		\nYastreb, copy that. Don't expose yourself, let Air handle it.
+		\nYastreb, we're above you. Mark the target.</text>
 	</string>
-	-->
 	<!-- Sarcofag -->
 	
 	<string id="cc_characters_voice-scenario-sarcofag-monolith_call_1">
