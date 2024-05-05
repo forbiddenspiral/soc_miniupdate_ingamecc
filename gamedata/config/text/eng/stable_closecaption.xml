@@ -1714,29 +1714,27 @@
 	</string>
 
 	<!-- Pripyat -->
-	<!-- 
 	<string id="cc_characters_voice-scenario-pri-heli_phrase1">
-		<text>Placeholder (pri).</text>
+		<text>Base, this is Staya-4, we'll be on site soon.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-pri-heli_phrase2">
-		<text>Placeholder (pri).</text>
+		<text>Good luck, Staya-4.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-pri-heli_phrase3">
-		<text>Placeholder (pri).</text>
+		<text>I'm on board 0-20, something's not right... Auditory hallucinations... Yes, I hear it... Damn, what was that? No, no! Base, I'm okay. False alarm.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-pri-heli_phrase4">
-		<text>Placeholder (pri).</text>
+		<text>Board 0-20 is going down!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-pri-heli_phrase5">
-		<text>Placeholder (pri).</text>
+		<text>This is base. Continue to your destination.</text>
 	</string>
 	<string id="cc_characters_voice-scenario-pri-heli_phrase6">
-		<text>Placeholder (pri).</text>
+		<text>These are our guys, we must help!</text>
 	</string>
 	<string id="cc_characters_voice-scenario-pri-heli_phrase7">
-		<text>Placeholder (pri).</text>
+		<text>Follow orders, Staya-4!</text>
 	</string>
-	-->
 	<string id="pri_followers_final_phrase2-0">
 		<text>Marked One, come here! We need to talk!</text>
 	</string>
