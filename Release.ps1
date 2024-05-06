@@ -16,7 +16,7 @@ $ingame_cc_mod_folder = "$workspace_folder\CC_for_ZRP\gamedata"
 Set-Location $release_folder
 
 # Specify the patch version for the release.
-$patch_version = "v0.3"
+$patch_version = "v0.4"
 
 # Begin release process.
 Write-Host "====================" -ForegroundColor Green

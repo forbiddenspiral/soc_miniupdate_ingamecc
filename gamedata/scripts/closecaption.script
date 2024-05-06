@@ -4,7 +4,7 @@
 -- Keszitette: The Sweet Little 16-bit (tsl16b@freemail.hu)
 -----------------------------------------------------------
 -- forgottenspiral
--- v0.3
+-- v0.4
 -----------------------------------------------------------
 
 function cc_display_sndobj_theme(cc_id)
