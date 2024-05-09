@@ -1,63 +1,12 @@
 
 	<intro_logo>
-		<play_each_item>0</play_each_item>
-		<global_wnd x="0" y="0" width="1024" height="768">
-			<auto_static x="0" y="0" width="1024" height="768" stretch="1">
-				<texture>intro\intro_back</texture>
+		<global_wnd>
+			<auto_static>
 			</auto_static>
 		</global_wnd>
-
-		<item type="video">
-			<delay>1</delay>
-			<pause_state>on</pause_state>
-			<sound>characters_voice\scenario\video\thq_logo_audio</sound>
-			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
-				<texture x="0" y="1" width="720" height="484">intro\thq_logo_hyuv</texture>
-			</video_wnd>
-		</item>
-		<item type="video">
-			<sound>characters_voice\scenario\video\intro_gsc</sound>
-			<delay>1</delay>
-			<pause_state>on</pause_state>
-			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
-				<texture x="0" y="1" width="800" height="358">intro\intro_gsc</texture>
-			</video_wnd>
-		</item>
-		
 		<item type="image">
-			<length_sec>9</length_sec>
-			<pause_state>on</pause_state>
 			<main_wnd>
-				<auto_static start_time="0" length_sec="4"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
-					<window_name>w1</window_name>
-					<texture>ui_asus_01</texture>
-				</auto_static>
-				<auto_static start_time="4" length_sec="4"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
-					<window_name>w2</window_name>
-					<texture>ui_asus_02</texture>
-				</auto_static>
-			</main_wnd>
-		</item>
-<!-- this will crash unpatched SoC - game requires at least patch 1.0004
-		<item type="image">
-			<length_sec>5</length_sec>
-			<pause_state>on</pause_state>
-			<main_wnd>
-				<auto_static start_time="0" length_sec="4"  x="0" y="0" width="1024" height="768" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
-					<window_name>w1</window_name>
-					<texture>ui\ui_nvidia_intro</texture>
-				</auto_static>
-			</main_wnd>
-		</item>
- -->
-		<item type="image">
-			<length_sec>5</length_sec>
-			<sound>ambient\underground\hit_2</sound>
-			<pause_state>on</pause_state>
-			<main_wnd>
-				<auto_static start_time="0" length_sec="4"  x="360" y="94" width="304" height="580" stretch="1" light_anim="asus_logo_01" light_anim_cyclic="0" la_alpha="1" la_texture="1">
-					<window_name>w1</window_name>
-					<texture>ui\ui_ficsoport_intro</texture>
+				<auto_static>
 				</auto_static>
 			</main_wnd>
 		</item>
