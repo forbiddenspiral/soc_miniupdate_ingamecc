@@ -1,5 +1,5 @@
 # InGameCC mod for S.T.A.L.K.E.R.: Shadow of Chernobyl
 
-This is a mini-update for the InGameCC mod (based on the MrSeyker's files of the InGameCC mod adapted for use with ZRP 1.07 R5RC).
+This is a mini-update for the InGameCC mod (based on MrSeyker's adapted files for ZRP 1.07 R5RC).
 
-You can find more information on: [ModDB](https://www.moddb.com/games/stalker/addons/mini-update-patch-for-the-ingamecc-mod).
+You still need the original mod files that can be found here: [Reddit](https://www.reddit.com/r/stalker/comments/bf55c3/using_ingame_closed_caption_mod_with_zrp_107_r5_rc/).
