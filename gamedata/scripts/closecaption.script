@@ -130,7 +130,7 @@ function cc_display_normal(cc_id, showtime, sender, color)
 				local tmpl = "closecaption_" .. color
 				local hud = get_hud()
 				hud:AddCustomStatic(tmpl, true)
-				hud:GetCustomStatic(tmpl):wnd():SetTextST(game.translate_string(cc_id))
+				hud:GetCustomStatic(tmpl):wnd():SetText(game.translate_string(cc_id))
 				hud:GetCustomStatic(tmpl).m_endTime = time_ccend
 				if color <= #cc_on then cc_on[color] = time_ccend end
 			end
